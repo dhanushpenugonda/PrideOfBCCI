@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign up</title>
+        <link rel="stylesheet" href="player.css">
+        <script type="text/javascript" src="script.js"></script>
+        <style>
+            body{
+                background-image: url("images/cricket.jpg");
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: center;
+                background-size: cover;
+            }
+
+            .hero{
+                font-family: 'Muli', sans-serif;
+            }
+
+            #input_detalis_n,#input_detalis_e,#input_detalis_p,#input_detalis_rp{
+                padding: 0 40px;
+                width: 60%;
+                height: 55px;
+                border: 1px solid #dadada;
+                color: #fff;
+                text-align: justify; 
+                outline: none;
+                letter-spacing: 1px;
+                font-size: 16px;
+                font-weight: normal;
+                font-family: 'Muli', sans-serif;
+                background-color: transparent;
+                border-radius: 30px;
+            }
+
+            form{
+                box-sizing: border-box;
+                font-style: oblique;
+                position: absolute;
+
+            }
+            h1{
+                font-size: larger;
+                animation: none;
+            }
+
+            .form_box{
+                margin-top: 100px;
+                margin-left: 150px;
+                background: #fff;
+                padding: 25px;
+                background: transparent;
+                backdrop-filter: blur(16px);  
+                border-radius: 20px;
+                box-shadow: 0px 0px 20px 0px green;
+            }
+
+            .register{
+                width: 50%;
+                padding: 20px 30px;
+                cursor: pointer;
+                background: linear-gradient(to right, #ff105f,#ffad06);
+                background-origin: 0;
+                outline:  none;
+                border-radius: 30px;
+            }
+
+            .register:hover{
+                background: linear-gradient(to right, #d9f05a,#49f1f1);
+                color: #fff;
+            }
+
+            .left_side{
+                float: right;
+            }
+            .menubuttons{
+                background: transparent;
+            }
+
+        </style>
+    </head>
+    <body class="hero">
+        <table class="homebar" style="width: 100%; background: transparent; border-radius: 5px; box-shadow: 0px 0px 40px 0px green;" border="0" cellspacing="0">
+            <colgroup>
+                <col style="width: 50%;">
+                <col style="width: 8%;">
+                <col style="width: 8%;">
+                <col style="width: 8%;">
+                <col style="width: 8%;">
+                <col style="width: 8%;">
+                <col style="width: 10%;">
+            </colgroup>
+            <tr>
+                <td>&nbsp;&nbsp;<a class="homebutton" href="home.html"><img class="logo" src="1200px-Cricket_India_Crest.svg.png" width="50">&nbsp;Indian Cricket</a></td>
+                <td><a href="achieve.html"><button class="menubuttons" type="button">Achievements</button></a></td>
+                <td><a href="player.html"><button class="menubuttons" type="button" onmouseover="disp_arrow()" onmouseout="nodisp_arrow()">Players <i class="arrow" onmouseover="disp_list()"></i></button></a></td>
+                <td><a href="rankings.html"><button class="menubuttons" type="button">Rankings</button></a></td>
+                <td><a href="stadium.html"><button class="menubuttons" type="button">Stadiums</button></a></td>
+                <td><a href="quiz.html"><button class="menubuttons" type="button">Quiz</button></a></td>
+                <td style="text-align: right;"><a href="signin.html"><img src="home/login.png" class="signin"></a></td>
+            </tr>
+        </table>
+        <div class="plist">
+            <ul>
+                <li><a href="virat.html">Virat Kohli</a></li>
+                <li><a href="rohit.html">Rohit Sharma</a></li>
+                <li><a href="bumrah.html">Jasprit Bumrah</a></li>
+                <li><a href="ashwin.html">Ravichandran Ashwin</a></li>
+                <li><a href="jadeja.html">Ravindra Jadeja</a></li>
+                <li><a href="pujara.html">Cheteshwar Pujara</a></li>
+                <li><a href="rahane.html">Ajikya Rahane</a></li>
+                <li><a href="dhawan.html">Shikar Dhawan</a></li>
+                <li><a href="rahul.html">KL Rahul</a></li>
+                <li><a href="shami.html">Mohammad Shami</a></li>
+                <li><a href="ishant.html">Ishant Sharma</a></li>
+                <li><a href="pant.html">Rishabh Pant</a></li>
+                <li><a href="hardik.html">Hardik Pandya</a></li>
+                <li><a href="saha.html">Wriddhiman Saha</a></li>
+                <li><a href="umesh.html">Umesh Yadav</a></li>
+                <li><a href="bhuvi.html">Bhuneshwar Kumar</a></li>
+                <li><a href="kuldeep.html">Kuldeep Yadav</a></li>
+                <li><a href="axar.html">Axar Patel</a></li>
+                <li><a href="shreyas.html">Shreyas Iyer</a></li>
+                <li><a href="chahal">Yusvendra Chahal</a></li>
+            </ul>
+            <div id="cancel" onclick="nodisp_list()">Cancel</div>
+        </div>
+        
+        </br></br></br>
+        <form class="form_box" onsubmit="return validation()" action="thank.html">
+            <table>
+                <tr>
+                    <td class="left_side"><h1>Name :</h1></td>
+                    <td class="right_side"><input type="text" name="Name" placeholder="Name" id="input_detalis_n"></td>
+                    <br>
+                </tr>
+                <tr>
+                    <td class="left_side"><h1>Email :</h1></td>
+                    <td class="right_side"><input type="email" name="email" placeholder="Email" id="input_detalis_e"></td>
+                </tr>
+                <tr>
+                    <td class="left_side"><h1>Password :</h1></td>
+                    <td class="right_side"><input type="password" name="password" placeholder="password" id="input_detalis_p"></td>
+                </tr>
+                <tr>
+                    <td class="left_side"><h1>Re-enter Password :</h1></td>
+                    <td class="right_side"><input type="password" name="rpassword" placeholder="re-enter password" id="input_detalis_rp"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div>
+                            <br>
+                            <center>
+                                <div>
+                                    <button type="submit" class="register">Submit</button>
+                                </div>
+                            </center>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

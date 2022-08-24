@@ -1,0 +1,426 @@
+<html style="scroll-behavior: smooth;">
+    <head>
+        <title>Stadiums</title>
+        <link rel="stylesheet" href="player.css">
+        <script type="text/javascript" src="script.js"></script>
+        <style>
+            h2{
+                padding-top: 100px;
+            }
+            #scroll {
+              display: none;
+              position: fixed;
+              bottom: 20px;
+              right: 30px;
+              width: 15%;
+              z-index: 99;
+              font-size: 18px;
+              border: none;
+              outline: none;
+              background-color:blue;
+              color: white;
+              cursor: pointer;
+              padding: 15px;
+              border-radius: 4px;
+            }
+
+            .pics {
+  display: none; 
+  position: fixed; 
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+
+.picin {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+
+.piccl {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.piccl:hover,
+.piccl:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+            </style>
+    </head>
+    <body>
+        <table class="homebar" border="0" cellspacing="0">
+            <colgroup>
+                <col style="width: 50%;">
+                <col style="width: 8%;">
+                <col style="width: 8%;">
+                <col style="width: 8%;">
+                <col style="width: 8%;">
+                <col style="width: 8%;">
+                <col style="width: 10%;">
+            </colgroup>
+            <tr>
+                <td>&nbsp;&nbsp;<a class="homebutton" href="home.html"><img class="logo" src="logo.jpeg" width="50">&nbsp;Indian Cricket</a></td>
+                <td><a href="achieve.html"><button class="menubuttons" type="button">Achievements</button></a></td>
+                <td><a href="player.html"><button class="menubuttons" type="button" onmouseover="disp_arrow()" onmouseout="nodisp_arrow()">Players <i class="arrow" onmouseover="disp_list()"></i></button></a></td>
+                <td><a href="rankings.html"><button class="menubuttons" type="button">Rankings</button></a></td>
+                <td><a href="stadium.html"><button class="menubuttons" type="button">Stadiums</button></a></td>
+                <td><a href="quiz.html"><button class="menubuttons" type="button">Quiz</button></a></td>
+                <td style="text-align: right;"><a href="signin.html"><img src="home/login.png" class="signin"></a></td>
+            </tr>
+        </table>
+        <div class="plist">
+            <ul>
+                <li><a href="virat.html">Virat Kohli</a></li>
+                <li><a href="rohit.html">Rohit Sharma</a></li>
+                <li><a href="bumrah.html">Jasprit Bumrah</a></li>
+                <li><a href="ashwin.html">Ravichandran Ashwin</a></li>
+                <li><a href="jadeja.html">Ravindra Jadeja</a></li>
+                <li><a href="pujara.html">Cheteshwar Pujara</a></li>
+                <li><a href="rahane.html">Ajikya Rahane</a></li>
+                <li><a href="dhawan.html">Shikar Dhawan</a></li>
+                <li><a href="rahul.html">KL Rahul</a></li>
+                <li><a href="shami.html">Mohammad Shami</a></li>
+                <li><a href="ishant.html">Ishant Sharma</a></li>
+                <li><a href="pant.html">Rishabh Pant</a></li>
+                <li><a href="hardik.html">Hardik Pandya</a></li>
+                <li><a href="saha.html">Wriddhiman Saha</a></li>
+                <li><a href="umesh.html">Umesh Yadav</a></li>
+                <li><a href="bhuvi.html">Bhuneshwar Kumar</a></li>
+                <li><a href="kuldeep.html">Kuldeep Yadav</a></li>
+                <li><a href="axar.html">Axar Patel</a></li>
+                <li><a href="shreyas.html">Shreyas Iyer</a></li>
+                <li><a href="chahal">Yusvendra Chahal</a></li>
+            </ul>
+            <div id="cancel" onclick="nodisp_list()">Cancel</div>
+        </div>
+    </br></br></br>
+     
+    <button onclick="topFunction()" id="scroll" title="Go to top">click to scroll up</button>
+    <script>
+
+        var mybutton = document.getElementById("scroll");
+        
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+        <h1 style="text-align: center;">Top Stadiums in India</h1>
+        <table border="0" width="100%">
+                <colgroup>
+                    <col style="text-align:center; width: 16%;">
+                    <col style="text-align:center; width: 17%">
+                    <col style="text-align:center; width: 16%;">
+                    <col style="text-align:center; width: 17%">
+                    <col style="text-align:center; width: 16%;">
+                    <col style="text-align:center; width: 17%">
+                </colgroup>
+    
+            <tr>
+                <td colspan="2"><a href="#chidambaram"><img src="venues/v1.jpg" class="stadium"></a> </td>
+                <td colspan="2"><a href="#eden"><img src="venues/v2.jpg" class="stadium"></a></td>
+                <td colspan="2"><a href="#hpca"><img src="venues/v3.jpg" class="stadium"></a></td>
+            </tr>
+    
+            <tr style="text-align:center">
+                <td colspan="2">M.A.CHIDAMBARAM STADIUM</br></br></td>
+                <td colspan="2"> EDEN GARDENS</br></br></td>
+                <td colspan="2">HPCA STADIUM</br></br></td>
+            </tr>
+            <tr>
+                <td colspan="2"><a href="#chinnaswamy"><img src="venues/v4.jpg" class="stadium"></a></td>
+                <td colspan="2"><a href="#aca-vdca"><img src="venues/v5.jpg" class="stadium"></a></td>
+                <td colspan="2"><a href="#ferozshah"><img src="venues/v6.jpg" class="stadium"></a></td>
+            </tr>
+            <tr style="text-align:center">
+                <td colspan="2">M.CHINNASWAMY STADIUM</br></br></td>
+                <td colspan="2">ACA-VDCA STADIUM</br></br></td>
+                <td colspan="2">ARJUN JAITLEY STADIUM</br></br></td>
+            </tr>
+            <tr style="text-align:center">
+                <td colspan="3"><a href="#nehru"><img src="venues/v7.jpg" class="stadium"></a></td>
+                <td colspan="3"><a href="#barabati"><img src="venues/v8.jpg" class="stadium"></a></td>
+            </tr>
+            <tr style="text-align:center">
+                <td colspan="3">JAWAHARLAL NEHRU STADIUM</br></br></td>
+                <td colspan="3">BARABATI STADIUM</br></br></td>
+            </tr>
+        </table>
+    
+            </br></br></br></br></br>
+            <table width=100% cellpadding="25">
+                <colgroup>
+                    <col style="width: 75%;">
+                </colgroup>
+                <tr   >
+                    <td id="stad"  >
+                        <h2 id="chidambaram"  >M. A. Chidambaram Stadium</h2>	
+                        <table>
+                            <colgroup>
+                                <col style="width: 40%;">
+                                <col style="width: 40%;">
+                            </colgroup>
+                            <tr><td>Capacity</td><td>50000</td></tr>
+                            <tr><td>Known as</td><td>Chepauk; Madras Cricket Club Ground</td></tr>
+                            <tr><td>Ends</td><td>Anna Pavilion End, V Pattabhiraman Gate End</td></tr>
+                            <tr><td>Location</td><td>Chennai, India</td></tr>
+                            <tr><td>Home to</td><td>Tamil Nadu, Chennai Super Kings</td></tr>
+                            <tr><td>Floodlights</td><td>Yes</td></tr>
+                        </table>
+                    </br>
+                            The first ever Ranji Trophy game was played at this venue. Madras' AG Ram Singh ran through
+                             Mysore with a 11-wicket haul in the match.</br></br>
+
+                            For a long time, Chepauk hosted the famous Pongal (Harvest) Test.
+                            It used to be played in the month of January.</br></br>
+
+                            India registered their first ever Test win at this stadium, when they beat England by an
+                             innings and 8 runs.</br></br>
+
+                            The second tied Test in the history of cricket was played here, between India and Australia in 1986.</br></br>
+
+                            Saeed Anwar recorded the highest individual score in ODIs - 194 - at this ground. The milestone
+                             remained for more than a decade, before Sachin Tendulkar scored 200 against South Africa.</br></br>
+
+                            Sunil Gavaskar went past Don Bradman's 29 Test hundreds at this very venue.</br></br>
+
+                            This ground was also witness to one of Sachin Tendulkar's greatest Test innings. The Indian
+                             maestro battled back spasms and almost took his side home against Pakistan in 1999. But his
+                              136 went in vain as the arch-rivals sealed a 12-run victory.</br></br>
+                    </td>
+                    <td><img src="stadium/chidambaram.jpg" style="width: 500px;"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2 id="eden">Eden Gardens</h2>	
+                        <table>
+                            <colgroup>
+                                <col style="width: 40%;">
+                                <col style="width: 40%;">
+                            </colgroup>
+                            <tr><td>Capacity</td><td>63000</td></tr>
+                            <tr><td>Ends</td><td>High Court End, Pavilion End</td></tr>
+                            <tr><td>Location</td><td>Kolkata, India</td></tr>
+                            <tr><td>Home to</td><td>Bengal, Kolkata Knight Riders</td></tr>
+                            <tr><td>Floodlights</td><td>Yes</td></tr>
+                        </table>
+                        </br>
+                        The highest ODI score by any batsman was made on this ground. Rohit Sharma smashed 264 against Sri Lanka in November, 2014.</br></br>
+
+                        Eden Gardens has hosted as many as 39 Tests - the most by any venue in India.</br></br>
+                    </td>
+                    <td><img src="stadium/eden.jpg" style="width: 500px;"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2 id="hpca">HPCA Stadium</h2>	
+                        <table>
+                            <colgroup>
+                                <col style="width: 40%;">
+                                <col style="width: 40%;">
+                            </colgroup>
+                            <tr><td>Capacity</td><td>23000</td></tr>
+                            <tr><td>Ends</td><td>River End, College End</td></tr>
+                            <tr><td>Location</td><td>Dharamsala, India</td></tr>
+                            <tr><td>Home to</td><td>Himachal Pradesh, Kings XI Punjab</td></tr>
+                            <tr><td>Floodlights</td><td>Yes</td></tr>
+                        </table>
+                        </br>
+                        Sitting at 1457 metres above sea level, the Himachal Pradesh Cricket Association
+                         (HPCA) Stadium in Dharamsala, is widely regarded as the most picturesque cricket
+                          stadium in the world. With the beautiful Dhauladhar mountain range lacing its
+                           backdrop, the HPCA stadium offers one of the most stunning views to its visitors,
+                            especially when the mighty peaks are blanketed in snow.</br></br>
+                        Even though international cricket made its first appearance here only in 2013,
+                         the HPCA stadium has already established itself as a world-class cricket destination
+                          in a very short time. Best known for being the abode of the Dalai Lama, this
+                           quaint little town first found its place on the cricketing world map in 2010,
+                            when Chennai Super Kings locked horns with Kings XI Punjab in the Indian Premier
+                             League (IPL).</br></br>
+                    </td>
+                    <td><img src="stadium/hpca.jpg" style="width: 500px;"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2 id="chinnaswamy">M.Chinnaswamy Stadium</h2>	
+                        <table>
+                            <colgroup>
+                                <col style="width: 40%;">
+                                <col style="width: 40%;">
+                            </colgroup>
+                            <tr><td>Capacity</td><td>40000</td></tr>
+                            <tr><td>Known as</td><td>Karnataka State Cricket Association Stadium</td></tr>
+                            <tr><td>Ends</td><td>Pavilion End, BEML End</td></tr>
+                            <tr><td>Location</td><td>Bengaluru, India</td></tr>
+                            <tr><td>Home to</td><td>Karnataka, Royal Challengers Bengaluru</td></tr>
+                            <tr><td>Floodlights</td><td>Yes</td></tr>
+                        </table>
+                        </br>
+                        M Chinnaswamy stadium, lying in the heart of the state capital, continues to remain one
+                         of the biggest cricketing centres of the country. Starting off as a humble abode, the
+                          stadium has now turned out to be a marquee venue, capable of hosting some of the biggest
+                           cricket matches to be played in the country. Home to some of the classiest match-winners
+                            of India, Chinnaswamy stadium, in its debut Test match had the honour of hosting the
+                             West Indies in 1974. The match also marked the emergence of two modern legends,
+                              Gordon Greenidge and Sir Viv Richards. Since then, the stadium has regularly hosted
+                               Tests, although it's unfortunately considered as one of India's unluckiest venues.</br></br>
+                        Rohit Sharma scored his first ODI double hundred on this ground, a fine 209 against
+                         Australia in 2013.</br></br>
+
+                        The venue was also the scene of Ireland's biggest win. They beat England in the 2011
+                         World Cup encounter after Kevin O'Brien smashed a 50-ball 100, the fastest hundred
+                          in a WC match.</br></br>
+                    </td>
+                    <td><img src="stadium/chinnaswamy.jpg" style="width: 500px;"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2 id="aca-vdca">ACA–VDCA Cricket Stadium</h2>	
+                        <table>
+                            <colgroup>
+                                <col style="width: 40%;">
+                                <col style="width: 40%;">
+                            </colgroup>
+                            <tr><td>Capacity</td><td>28000</td></tr>
+                            <tr><td>Ends</td><td>Vizzy End, DV Subba Rao End</td></tr>
+                            <tr><td>Location</td><td>Visakhapatnam, India</td></tr>
+                            <tr><td>Home to</td><td>Andhra Pradesh, Sunrisers Hyderabad</td></tr>
+                            <tr><td>Floodlights</td><td>Yes</td></tr>
+                        </table>
+                        </br>
+                        
+                        ACA-VDCA Cricket Stadium, located in Pothinamallayya Palem, Visakhapatnam, is surrounded
+                         by the blissful facade of the picturesque hills and the leafy ramble of trees swaying in
+                          breeze. It is the home ground of Sunrisers Hyderabad in the Indian Premier League. The
+                           stadium built in 2003 is known for its excellent drainage facilities. The well-manicured,
+                            lush-green outfield at the ground has also come in for praise. The seating capacity is
+                             expected to be increased to 50,000. In fact, the Test status was also granted recently.
+                              It is the ninth ground to be awarded the Test status in India.</br></br>
+
+                        The first ever international match at this stadium took place between arch-rivals India
+                         and Pakistan in April 2005. It was a game in which MS Dhoni announced his arrival at the
+                          highest level with a blistering innings of 148. Since then, it has gone on to host five
+                           ODIs, one T20I and IPL fixtures related to Deccan Chargers in 2012. Sunrisers Hyderabad
+                            are expected to play three games in 2015 in the IPL.</br></br>
+                    </td>
+                    <td><img src="stadium/aca-vdca.jpg" style="width: 500px;"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2 id="ferozshah">Feroz Shah Kotla</h2>	
+                        <table>
+                            <colgroup>
+                                <col style="width: 40%;">
+                                <col style="width: 40%;">
+                            </colgroup>
+                            <tr><td>Capacity</td><td>48000</td></tr>
+                            <tr><td>Known as</td><td>Arun Jaitley, Willingdon Pavilion</td></tr>
+                            <tr><td>Ends</td><td>Stadium End, Pavilion End</td></tr>
+                            <tr><td>Location</td><td>Delhi, India</td></tr>
+                            <tr><td>Home to</td><td>Delhi, Sunrisers Hyderabad</td></tr>
+                            <tr><td>Floodlights</td><td>Yes</td></tr>
+                        </table>
+                        </br>
+                        
+                        The stadium witnessed Anil Kumble's famous 10/74 in an innings, against Pakistan in
+                         1999. With these figures, Kumble became only the second bowler after Jim Laker to
+                          take all the ten wickets in an innings.</br></br>
+
+                        In 1983, Sunil Gavaskar scored his 29th Test ton at this venue, equalling Sir Donald
+                         Bradman's record for the most number of centuries in Test cricket.</br></br>
+
+                        In 2005, Sachin Tendulkar went past Sunil Gavaskar's record of 34 Test centuries,
+                         registering his 35th Test ton in the second Test against Sri Lanka at this venue.</br></br>
+                    </td>
+                    <td><img src="stadium/ferozshah.jpg" style="width: 500px;"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2 id="nehru">Nehru Stadium</h2>	
+                        <table>
+                            <colgroup>
+                                <col style="width: 40%;">
+                                <col style="width: 40%;">
+                            </colgroup>
+                            <tr><td>Capacity</td><td>40000</td></tr>
+                            <tr><td>Ends</td><td>Tilak Road End, Laxmi Road End</td></tr>
+                            <tr><td>Location</td><td>Pune, India</td></tr>
+                            <tr><td>Home to</td><td>Tamil Nadu</td></tr>
+                            <tr><td>Floodlights</td><td>Yes</td></tr>
+                        </table>
+                        </br>
+                        The Nehru Stadium was built and established in 1969, in the first match between
+                         Bill Lawry’s Australia and West Zone. The Australians had come to tour India in 1969.</br></br>
+
+                        Curated by Chandu Borde, the stadium has been witnessed to over 11 ODIs, the first
+                         being held on 5 December 1984 between India and England. England chased down India’s
+                          target of 215 with 4 wickets in hand.</br></br>
+
+                        The Western Zone team used the stadium for their matches from 1975-2001. The stadium
+                         did not have floodlights for a very long time and had hence hosted only ODIs.</br></br>
+
+                        Recent renovations by the Pune Cricket Association have helped bring the stadium
+                         floodlights in order to be considered as an international cricketing venue in the future.</br></br>
+                    </td>
+                    <td><img src="stadium/nehru.jpg" style="width: 500px;"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2 id="barabati">Barabati Stadium</h2>	
+                        <table>
+                            <colgroup>
+                                <col style="width: 40%;">
+                                <col style="width: 40%;">
+                            </colgroup>
+                            <tr><td>Capacity</td><td>45000</td></tr>
+                            <tr><td>Ends</td><td>Mahanadi River End River End, Pavilion End</td></tr>
+                            <tr><td>Location</td><td>Cuttak, India</td></tr>
+                            <tr><td>Home to</td><td>Odisha</td></tr>
+                            <tr><td>Floodlights</td><td>Yes</td></tr>
+                        </table>
+                        </br>
+                        
+                        The Barabati stadium, situated in Cuttack, Odisha, has been a host to numerous international
+                         matches and the ground is of truly rich sporting heritage. It is the home ground of the Odisha
+                          team. It has also staged IPL matches. Even football matches have been held at the stadium.</br></br>
+
+                        In fact, the Barabati stadium is one of the oldest grounds in India. It can be encapsulated
+                         by the fact that back in 1961, MCC had played a game here against East Zone. The West Indies
+                          too had played a tour game in 1974-75. International cricket came to the Barabati stadium
+                           in 1982, when India beat England to clinch the ODI series 2-1. Interestingly, It was the
+                            third ODI held in this country.</br></br>
+                    </td>
+                    <td><img src="stadium/barabati.jpg" style="width: 500px;"></td>
+                </tr>
+            </table>
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+        
+    </body>
+</html>

@@ -1,0 +1,158 @@
+<html>
+    <head>
+        <title>Quiz</title>
+        <link rel="stylesheet" href="player.css">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <table class="homebar" border="0" cellspacing="0">
+            <colgroup>
+                <col style="width: 50%;">
+                <col style="width: 8%;">
+                <col style="width: 8%;">
+                <col style="width: 8%;">
+                <col style="width: 8%;">
+                <col style="width: 8%;">
+                <col style="width: 10%;">
+            </colgroup>
+            <tr>
+                <td>&nbsp;&nbsp;<a class="homebutton" href="home.html"><img class="logo" src="logo.jpeg" width="50">&nbsp;Indian Cricket</a></td>
+                <td><a href="achieve.html"><button class="menubuttons" type="button">Achievements</button></a></td>
+                <td><a href="player.html"><button class="menubuttons" type="button" onmouseover="disp_arrow()" onmouseout="nodisp_arrow()">Players <i class="arrow" onmouseover="disp_list()"></i></button></a></td>
+                <td><a href="rankings.html"><button class="menubuttons" type="button">Rankings</button></a></td>
+                <td><a href="stadium.html"><button class="menubuttons" type="button">Stadiums</button></a></td>
+                <td><a href="quiz.html"><button class="menubuttons" type="button">Quiz</button></a></td>
+                <td style="text-align: right;"><a href="signin.html"><img src="home/login.png" class="signin"></a></td>
+            </tr>
+        </table>
+        <div class="plist">
+            <ul>
+                <li><a href="virat.html">Virat Kohli</a></li>
+                <li><a href="rohit.html">Rohit Sharma</a></li>
+                <li><a href="bumrah.html">Jasprit Bumrah</a></li>
+                <li><a href="ashwin.html">Ravichandran Ashwin</a></li>
+                <li><a href="jadeja.html">Ravindra Jadeja</a></li>
+                <li><a href="pujara.html">Cheteshwar Pujara</a></li>
+                <li><a href="rahane.html">Ajikya Rahane</a></li>
+                <li><a href="dhawan.html">Shikar Dhawan</a></li>
+                <li><a href="rahul.html">KL Rahul</a></li>
+                <li><a href="shami.html">Mohammad Shami</a></li>
+                <li><a href="ishant.html">Ishant Sharma</a></li>
+                <li><a href="pant.html">Rishabh Pant</a></li>
+                <li><a href="hardik.html">Hardik Pandya</a></li>
+                <li><a href="saha.html">Wriddhiman Saha</a></li>
+                <li><a href="umesh.html">Umesh Yadav</a></li>
+                <li><a href="bhuvi.html">Bhuneshwar Kumar</a></li>
+                <li><a href="kuldeep.html">Kuldeep Yadav</a></li>
+                <li><a href="axar.html">Axar Patel</a></li>
+                <li><a href="shreyas.html">Shreyas Iyer</a></li>
+                <li><a href="chahal">Yusvendra Chahal</a></li>
+            </ul>
+            <div id="cancel" onclick="nodisp_list()">Cancel</div>
+        </div>
+        </br></br></br>
+        <div class="rules">
+            <p>Intructions:</p>
+            <ol>
+                <li>This quiz is just a test to understand your knowledge in cricket.</li>
+                <li>Each question given below carry equal points.</li>
+                <li>There is no time limit.</li>
+                <li>Better take this test without using any other help of aids like internet, as said before this is just to understand your knowledge in cricket</li>
+                <li>At the end of the quiz there is a poll where you can tell your opinion regarding the question asked.</li>
+            </ol>
+        </div>
+
+        <div style="margin-left: 30px;">
+
+            <p>Q1. Who is the most successful captain of India?</p>
+            <p class="option"><label><input type="radio" name="q1" value="option1">MS Dhoni</label></p>
+            <p class="option"><label><input type="radio" name="q1" value="option2">Virat Kohli</label></p>
+            <p class="option"><label><input type="radio" name="q1" value="option3">Kapil Dev</label></p>
+            <p class="option"><label><input type="radio" name="q1" value="option4">SC Ganguly</label></p>
+            
+
+            
+            <p>Q2. Who is the first Indian cricketer to score centuries in all formats?</p>
+            <p class="option"><label><input type="radio" name="q2" value="option1">Virender Sehwag</label></p>
+            <p class="option"><label><input type="radio" name="q2" value="option2">Yuvaraj Singh</label></p>
+            <p class="option"><label><input type="radio" name="q2" value="option3">Suresh Raina</label></p>
+            <p class="option"><label><input type="radio" name="q2" value="option4">Sachin Tendulkar</label></p>
+            
+
+            
+            <p>Q3. Who has the best bowling figure in ODI?</p>
+            <p class="option"><label><input type="radio" name="q3" value="option1">Stuart Binny</label></p>
+            <p class="option"><label><input type="radio" name="q3" value="option2">Zaheer Khan</label></p>
+            <p class="option"><label><input type="radio" name="q3" value="option3">Jasprit Bumrah</label></p>
+            <p class="option"><label><input type="radio" name="q3" value="option4">Anil Kumble</label></p>
+            
+
+            
+            <p>Q4. Who is the highest paid captain?</p>
+            <p class="option"><label><input type="radio" name="q4" value="option1">Virat Kohli</label></p>
+            <p class="option"><label><input type="radio" name="q4" value="option2">Joe Root</label></p>
+            <p class="option"><label><input type="radio" name="q4" value="option3">Kane Williamson</label></p>
+            <p class="option"><label><input type="radio" name="q4" value="option4">Aaron Finch</label></p>
+            
+
+            
+            <p>Q5. Who has the highest number of centuries in all formats?</p>
+            <p class="option"><label><input type="radio" name="q5" value="option1">Virat Kohli</label></p>
+            <p class="option"><label><input type="radio" name="q5" value="option2">Ricky Pontig</label></p>
+            <p class="option"><label><input type="radio" name="q5" value="option3">Sachin Tendulkar</label></p>
+            <p class="option"><label><input type="radio" name="q5" value="option4">Hassim Amla</label></p>
+            
+
+            
+            <p>Q6. Which of the following players has the highest partnership in test?</p>
+            <p class="option"><label><input type="radio" name="q6" value="option1">R Dravid, SR Tendulkar </label></p>
+            <p class="option"><label><input type="radio" name="q6" value="option2">DPMD Jayawardene, KC Sangakkara </label></p>
+            <p class="option"><label><input type="radio" name="q6" value="option3">CG Greenidge, DL Haynes</label></p>
+            <p class="option"><label><input type="radio" name="q6" value="option4">ML Hayden, JL Langer</label></p>
+            
+
+            
+            <p>Q7. Who among the following players took highest number of catches in a test series?</p>
+            <p class="option"><label><input type="radio" name="q7" value="option1">Johnty Rohdes</label></p>
+            <p class="option"><label><input type="radio" name="q7" value="option2">Ricky Pontig</label></p>
+            <p class="option"><label><input type="radio" name="q7" value="option3">Rahul Dravid</label></p>
+            <p class="option"><label><input type="radio" name="q7" value="option4">JH Kallis</label></p>
+            
+
+            
+            <p>Q8. Who among the following has highest 10 wicket fall?</p>
+            <p class="option"><label><input type="radio" name="q8" value="option1">Shane Warne</label></p>
+            <p class="option"><label><input type="radio" name="q8" value="option2">Anil Kumble</label></p>
+            <p class="option"><label><input type="radio" name="q8" value="option3">Clarrie Grimmett</label></p>
+            <p class="option"><label><input type="radio" name="q8" value="option4">Muttiah Muralitharan</label></p>
+            
+
+            
+            <p>Q9. Which team Among the following has most number of world cups?</p>
+            <p class="option"><label><input type="radio" name="q9" value="option1">India</label></p>
+            <p class="option"><label><input type="radio" name="q9" value="option2">Australia</label></p>
+            <p class="option"><label><input type="radio" name="q9" value="option3">England</label></p>
+            <p class="option"><label><input type="radio" name="q9" value="option4">West Indes</label></p>
+            
+
+            
+            <p>Q10. Who scored most runs in a single edition of world cup?</p>
+            <p class="option"><label><input type="radio" name="q10" value="option1">Shakib-al-Hasan</label></p>
+            <p class="option"><label><input type="radio" name="q10" value="option2">David Warner</label></p>
+            <p class="option"><label><input type="radio" name="q10" value="option3">Rohit Sharma</label></p>
+            <p class="option"><label><input type="radio" name="q10" value="option4">Sachin Tendulkar</label></p>
+
+            <div class="polls">
+                <div class="poll-q">Who will be the next captain?</div>
+                <div class="polls-inner">
+                    <div class="poll1" onclick="poll(1)">KL Rahul</div>
+                    <div class="poll2" onclick="poll(2)">Shreyas Iyer</div>
+                </div>
+                <div class="votes">2 Votes</div>
+            </div>
+            
+            <button class="submit" onclick="window.confirm('Are you sure to submit?'); submit()">Submit</button>
+        </div>
+        <h3 id="score"></h3>
+    </body>
+</html>

@@ -1,0 +1,577 @@
+<html>
+    <head>
+        <title>Rankings</title>
+        <link rel="stylesheet" href="player.css">
+        <script type="text/javascript" src="script.js"></script>
+        <style>
+            h2, h3{
+                margin: 10px;
+                background-color: #35C5FF;
+                padding: 10px;
+                color: whitesmoke;
+                overflow: hidden;
+            }
+            h2:hover, h3:hover{
+                background-color: rgb(8, 142, 196);
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <table class="homebar" border="0" cellspacing="0">
+            <colgroup>
+                <col style="width: 50%;">
+                <col style="width: 8%;">
+                <col style="width: 8%;">
+                <col style="width: 8%;">
+                <col style="width: 8%;">
+                <col style="width: 8%;">
+                <col style="width: 10%;">
+            </colgroup>
+            <tr>
+                <td>&nbsp;&nbsp;<a class="homebutton" href="home.html"><img class="logo" src="logo.jpeg" width="50">&nbsp;Indian Cricket</a></td>
+                <td><a href="achieve.html"><button class="menubuttons" type="button">Achievements</button></a></td>
+                <td><a href="player.html"><button class="menubuttons" type="button" onmouseover="disp_arrow()" onmouseout="nodisp_arrow()">Players <i class="arrow" onmouseover="disp_list()"></i></button></a></td>
+                <td><a href="rankings.html"><button class="menubuttons" type="button">Rankings</button></a></td>
+                <td><a href="stadium.html"><button class="menubuttons" type="button">Stadiums</button></a></td>
+                <td><a href="quiz.html"><button class="menubuttons" type="button">Quiz</button></a></td>
+                <td style="text-align: right;"><a href="signin.html"><img src="home/login.png" class="signin"></a></td>
+            </tr>
+        </table>
+        <div class="plist">
+            <ul>
+                <li><a href="virat.html">Virat Kohli</a></li>
+                <li><a href="rohit.html">Rohit Sharma</a></li>
+                <li><a href="bumrah.html">Jasprit Bumrah</a></li>
+                <li><a href="ashwin.html">Ravichandran Ashwin</a></li>
+                <li><a href="jadeja.html">Ravindra Jadeja</a></li>
+                <li><a href="pujara.html">Cheteshwar Pujara</a></li>
+                <li><a href="rahane.html">Ajikya Rahane</a></li>
+                <li><a href="dhawan.html">Shikar Dhawan</a></li>
+                <li><a href="rahul.html">KL Rahul</a></li>
+                <li><a href="shami.html">Mohammad Shami</a></li>
+                <li><a href="ishant.html">Ishant Sharma</a></li>
+                <li><a href="pant.html">Rishabh Pant</a></li>
+                <li><a href="hardik.html">Hardik Pandya</a></li>
+                <li><a href="saha.html">Wriddhiman Saha</a></li>
+                <li><a href="umesh.html">Umesh Yadav</a></li>
+                <li><a href="bhuvi.html">Bhuneshwar Kumar</a></li>
+                <li><a href="kuldeep.html">Kuldeep Yadav</a></li>
+                <li><a href="axar.html">Axar Patel</a></li>
+                <li><a href="shreyas.html">Shreyas Iyer</a></li>
+                <li><a href="chahal">Yusvendra Chahal</a></li>
+            </ul>
+            <div id="cancel" onclick="nodisp_list()">Cancel</div>
+        </div>
+        <br/><br/><br/>
+        <h1>International Rankings</h1>
+        <br/>
+        <div id="window">
+                <div class="minimize" onclick="minimize()">🡦🡧<br/>🡥🡤</div>
+                <table class="windowtable" border="1" cellspacing="0">
+                    <thead><th colspan="5" class="rankhead">Test</th></thead>
+                    <tr>
+                        <td>Rank</td>
+                        <td>Country</td>
+                        <td>Matches</td>
+                        <td>Points</td>
+                        <td>Rating</td>
+                    </tr>
+                    <tr><td>1</td><td><img src="flag/ind.png" height="15px">&nbsp;India</td><td>37</td><td>4455</td><td>120</td></tr>
+                    <tr><td>2</td><td><img src="flag/nz.png" height="15px">&nbsp;Newzealand</td><td>27</td><td>3198</td><td>118</td></tr>
+                    <tr><td>3</td><td><img src="flag/aus.png" height="15px">&nbsp;Australia</td><td>31</td><td>3498</td><td>113</td></tr>
+                    <tr><td>4</td><td><img src="flag/eng.png" height="15px">&nbsp;England</td><td>49</td><td>5174</td><td>106</td></tr>
+                    <tr><td>5</td><td><img src="flag/pak.png" height="15px">&nbsp;Pakistan</td><td>26</td><td>2328</td><td>90</td></tr>
+                    <tr><td>6</td><td><img src="flag/sa.png" height="15px">&nbsp;South Africa</td><td>29</td><td>2595</td><td>89</td></tr>
+                    <tr><td>7</td><td><img src="flag/sl.png" height="15px">&nbsp;Sri Lanka</td><td>36</td><td>2982</td><td>83</td></tr>
+                    <tr><td>8</td><td><img src="flag/wi.png" height="15px">&nbsp;West Indes</td><td>31</td><td>2501</td><td>81</td></tr>
+                    <tr><td>9</td><td><img src="flag/ban.png" height="15px">&nbsp;Bangladesh</td><td>20</td><td>1020</td><td>51</td></tr>
+                    <tr><td>10</td><td><img src="flag/zim.png" height="15px">&nbsp;Zimbabwe</td><td>11</td><td>315</td><td>29</td></tr>
+                </table>
+                <table class="windowtable" border="1" cellspacing="0">
+                    <thead><th colspan="5" class="rankhead">ODI</th></thead>
+                    <tr>
+                        <td>Rank</td>
+                        <td>Country</td>
+                        <td>Matches</td>
+                        <td>Points</td>
+                        <td>Rating</td>
+                    </tr>
+                    <tr><td>1</td><td><img src="flag/eng.png" height="15px">&nbsp;England</td><td>47</td><td>5708</td><td>121</td></tr>
+                    <tr><td>2</td><td><img src="flag/ind.png" height="15px">&nbsp;India</td><td>55</td><td>6520</td><td>119</td></tr>
+                    <tr><td>3</td><td><img src="flag/nz.png" height="15px">&nbsp;Newzealand</td><td>35</td><td>4344</td><td>118</td></tr>
+                    <tr><td>4</td><td><img src="flag/aus.png" height="15px">&nbsp;Australia</td><td>39</td><td>3596</td><td>111</td></tr>
+                    <tr><td>5</td><td><img src="flag/sa.png" height="15px">&nbsp;South Africa</td><td>34</td><td>3861</td><td>106</td></tr>
+                    <tr><td>6</td><td><img src="flag/pak.png" height="15px">&nbsp;Pakistan</td><td>38</td><td>3567</td><td>102</td></tr>
+                    <tr><td>7</td><td><img src="flag/ban.png" height="15px">&nbsp;Bangladesh</td><td>40</td><td>3372</td><td>89</td></tr>
+                    <tr><td>8</td><td><img src="flag/sl.png" height="15px">&nbsp;Sri Lanka</td><td>42</td><td>3802</td><td>80</td></tr>
+                    <tr><td>9</td><td><img src="flag/wi.png" height="15px">&nbsp;West Indes</td><td>49</td><td>1844</td><td>78</td></tr>
+                    <tr><td>10</td><td><img src="flag/afg.png" height="15px">&nbsp;Afghanistan</td><td>31</td><td>1316</td><td>59</td></tr>
+                </table>
+                <table class="windowtable" border="1" cellspacing="0">
+                    <thead><th colspan="5" class="rankhead">T20I</th></thead>
+                    <tr>
+                        <td>Rank</td>
+                        <td>Country</td>
+                        <td>Matches</td>
+                        <td>Points</td>
+                        <td>Rating</td>
+                    </tr>
+                    <tr><td>1</td><td><img src="flag/eng.png" height="15px">&nbsp;England</td><td>30</td><td>8166</td><td>272</td></tr>
+                    <tr><td>2</td><td><img src="flag/ind.png" height="15px">&nbsp;India</td><td>43</td><td>11613</td><td>270</td></tr>
+                    <tr><td>3</td><td><img src="flag/aus.png" height="15px">&nbsp;Australia</td><td>30</td><td>8005</td><td>267</td></tr>
+                    <tr><td>4</td><td><img src="flag/pak.png" height="15px">&nbsp;Pakistan</td><td>39</td><td>10137</td><td>260</td></tr>
+                    <tr><td>5</td><td><img src="flag/nz.png" height="15px">&nbsp;Newzealand</td><td>36</td><td>9181</td><td>255</td></tr>
+                    <tr><td>6</td><td><img src="flag/sa.png" height="15px">&nbsp;South Africa</td><td>27</td><td>6717</td><td>249</td></tr>
+                    <tr><td>7</td><td><img src="flag/afg.png" height="15px">&nbsp;Afghanistan</td><td>20</td><td>4601</td><td>230</td></tr>
+                    <tr><td>8</td><td><img src="flag/wi.png" height="15px">&nbsp;West Indes</td><td>29</td><td>6623</td><td>228</td></tr>
+                    <tr><td>9</td><td><img src="flag/sl.png" height="15px">&nbsp;Sri Lanka</td><td>26</td><td>5924</td><td>228</td></tr>
+                    <tr><td>10</td><td><img src="flag/ban.png" height="15px">&nbsp;Bangladesh</td><td>23</td><td>5194</td><td>226</td></tr>
+                </table>
+                <table class="windowtable" border="1" cellspacing="0">
+                        <thead><th colspan="4" class="rankhead">Test</th></thead>
+                        <tr>
+                            <td>Rank</td>
+                            <td>Player</td>
+                            <td>Team</td>
+                            <td>Rating</td>
+                        </tr>
+                        <tr><td>1</td><td>Kane Williamson</td><td><img src="flag/nz.png" height="15px">&nbsp;NZ</td><td>919</td></tr>
+                        <tr><td>2</td><td>Steve Smith</td><td><img src="flag/aus.png" height="15px">&nbsp;AUS</td><td>891</td></tr>
+                        <tr><td>3</td><td>Marnus Labuschagne</td><td><img src="flag/aus.png" height="15px">&nbsp;AUS</td><td>878</td></tr>
+                        <tr><td>4</td><td>Joe Root</td><td><img src="flag/eng.png" height="15px">&nbsp;ENG</td><td>831</td></tr>
+                        <tr><td>5</td><td>Virat Kohli</td><td><img src="flag/ind.png" height="15px">&nbsp;IND</td><td>814</td></tr>
+                        <tr><td>6</td><td>Bazar Azam</td><td><img src="flag/pak.png" height="15px">&nbsp;PAK</td><td>760</td></tr>
+                        <tr><td>7</td><td>Rishabh Pant</td><td><img src="flag/ind.png" height="15px">&nbsp;IND</td><td>747</td></tr>
+                        <tr><td>7</td><td>Henry Nicholis</td><td><img src="flag/nz.png" height="15px">&nbsp;NZ</td><td>747</td></tr>
+                        <tr><td>7</td><td>Rohit Sharma</td><td><img src="flag/ind.png" height="15px">&nbsp;IND</td><td>747</td></tr>
+                        <tr><td>10</td><td>David Warner</td><td><img src="flag/aus.png" height="15px">&nbsp;AUS</td><td>724</td></tr>
+                    </table>
+                    <table class="windowtable" border="1" cellspacing="0">
+                        <thead><th colspan="4" class="rankhead">ODI</th></thead>
+                        <tr>
+                            <td>Rank</td>
+                            <td>Player</td>
+                            <td>Team</td>
+                            <td>Rating</td>
+                        </tr>
+                        <tr><td>1</td><td>Bazar Azam</td><td><img src="flag/pak.png" height="15px">&nbsp;PAK</td><td>865</td></tr>
+                        <tr><td>2</td><td>Virat Kohli</td><td><img src="flag/ind.png" height="15px">&nbsp;IND</td><td>857</td></tr>
+                        <tr><td>3</td><td>Rohit Sharma</td><td><img src="flag/ind.png" height="15px">&nbsp;IND</td><td>825</td></tr>
+                        <tr><td>4</td><td>Ross Taylor</td><td><img src="flag/nz.png" height="15px">&nbsp;NZ</td><td>801</td></tr>
+                        <tr><td>5</td><td>Aaron Finch</td><td><img src="flag/aus.png" height="15px">&nbsp;AUS</td><td>791</td></tr>
+                        <tr><td>6</td><td>Jonny Bairstow</td><td><img src="flag/eng.png" height="15px">&nbsp;ENG</td><td>785</td></tr>
+                        <tr><td>7</td><td>Fakhar Zaman</td><td><img src="flag/pak.png" height="15px">&nbsp;PAK</td><td>778</td></tr>
+                        <tr><td>7</td><td>Francois du Plessis</td><td><img src="flag/sa.png" height="15px">&nbsp;SA</td><td>778</td></tr>
+                        <tr><td>9</td><td>David Warner</td><td><img src="flag/aus.png" height="15px">&nbsp;AUS</td><td>773</td></tr>
+                        <tr><td>9</td><td>Shai Hope</td><td><img src="flag/wi.png" height="15px">&nbsp;WI</td><td>773</td></tr>
+                    </table>
+                    <table class="windowtable" border="1" cellspacing="0">
+                        <thead><th colspan="4" class="rankhead">T20I</th></thead>
+                        <tr>
+                            <td>Rank</td>
+                            <td>Player</td>
+                            <td>Team</td>
+                            <td>Rating</td>
+                        </tr>
+                        <tr><td>1</td><td>Dawid Malan</td><td><img src="flag/eng.png" height="15px">&nbsp;ENG</td><td>892</td></tr>
+                        <tr><td>2</td><td>Bazar Azam</td><td><img src="flag/pak.png" height="15px">&nbsp;PAK</td><td>844</td></tr>
+                        <tr><td>3</td><td>Aaron Finch</td><td><img src="flag/aus.png" height="15px">&nbsp;AUS</td><td>830</td></tr>
+                        <tr><td>4</td><td>Devon Conway</td><td><img src="flag/nz.png" height="15px">&nbsp;NZ</td><td>774</td></tr>
+                        <tr><td>5</td><td>Virat Kohli</td><td><img src="flag/ind.png" height="15px">&nbsp;IND</td><td>762</td></tr>
+                        <tr><td>6</td><td>Rassie van der Dussen</td><td><img src="flag/sa.png" height="15px">&nbsp;SA</td><td>756</td></tr>
+                        <tr><td>7</td><td>Lokesh Rahul</td><td><img src="flag/ind.png" height="15px">&nbsp;IND</td><td>743</td></tr>
+                        <tr><td>8</td><td>Glenn Maxwell</td><td><img src="flag/aus.png" height="15px">&nbsp;AUS</td><td>694</td></tr>
+                        <tr><td>9</td><td>Martin Guptill</td><td><img src="flag/nz.png" height="15px">&nbsp;NZ</td><td>688</td></tr>
+                        <tr><td>10</td><td>Hazratullah</td><td><img src="flag/afg.png" height="15px">&nbsp;AFG</td><td>636</td></tr>
+                    </table>
+                <table class="windowtable" border="1" cellspacing="0">
+                        <thead><th colspan="4" class="rankhead">Test</th></thead>
+                        <tr>
+                            <td>Rank</td>
+                            <td>Player</td>
+                            <td>Team</td>
+                            <td>Rating</td>
+                        </tr>
+                        <tr><td>1</td><td>Pat Cummins</td><td><img src="flag/aus.png" height="15px">&nbsp;AUS</td><td>908</td></tr>
+                        <tr><td>2</td><td>Ravichandran Ashwin</td><td><img src="flag/ind.png" height="15px">&nbsp;IND</td><td>850</td></tr>
+                        <tr><td>3</td><td>Neil Wagner</td><td><img src="flag/nz.png" height="15px">&nbsp;NZ</td><td>825</td></tr>
+                        <tr><td>4</td><td>James Anderson</td><td><img src="flag/eng.png" height="15px">&nbsp;ENG</td><td>822</td></tr>
+                        <tr><td>5</td><td>Josh Hazelwood</td><td><img src="flag/aus.png" height="15px">&nbsp;AUS</td><td>816</td></tr>
+                        <tr><td>6</td><td>Tim Southee</td><td><img src="flag/nz.png" height="15px">&nbsp;NZ</td><td>811</td></tr>
+                        <tr><td>7</td><td>Staurt Broad</td><td><img src="flag/eng.png" height="15px">&nbsp;ENG</td><td>792</td></tr>
+                        <tr><td>8</td><td>Jason Holder</td><td><img src="flag/wi.png" height="15px">&nbsp;WI</td><td>755</td></tr>
+                        <tr><td>9</td><td>Kagiso Rabada</td><td><img src="flag/sa.png" height="15px">&nbsp;SA</td><td>753</td></tr>
+                        <tr><td>10</td><td>Mitchell Strac</td><td><img src="flag/aus.png" height="15px">&nbsp;AUS</td><td>744</td></tr>
+                    </table>
+                    <table class="windowtable" border="1" cellspacing="0">
+                        <thead><th colspan="4" class="rankhead">ODI</th></thead>
+                        <tr>
+                            <td>Rank</td>
+                            <td>Player</td>
+                            <td>Team</td>
+                            <td>Rating</td>
+                        </tr>
+                        <tr><td>1</td><td>Trent Boult</td><td><img src="flag/nz.png" height="15px">&nbsp;NZ</td><td>737</td></tr>
+                        <tr><td>2</td><td>Mujeeb Ur Rahman</td><td><img src="flag/ind.png" height="15px">&nbsp;IND</td><td>825</td></tr>
+                        <tr><td>3</td><td>Matt Henry</td><td><img src="flag/nz.png" height="15px">&nbsp;NZ</td><td>691</td></tr>
+                        <tr><td>4</td><td>Jasprit Bumrah</td><td><img src="flag/ind.png" height="15px">&nbsp;IND</td><td>690</td></tr>
+                        <tr><td>5</td><td>Mehedi Hasan</td><td><img src="flag/ban.png" height="15px">&nbsp;BAN</td><td>668</td></tr>
+                        <tr><td>6</td><td>Kagiso Rabada</td><td><img src="flag/sa.png" height="15px">&nbsp;SA</td><td>666</td></tr>
+                        <tr><td>7</td><td>Chris Woakes</td><td><img src="flag/eng.png" height="15px">&nbsp;ENG</td><td>665</td></tr>
+                        <tr><td>8</td><td>Josh Hazelwood</td><td><img src="flag/aus.png" height="15px">&nbsp;AUS</td><td>660</td></tr>
+                        <tr><td>9</td><td>Pat Cummins</td><td><img src="flag/aus.png" height="15px">&nbsp;AUS</td><td>646</td></tr>
+                        <tr><td>10</td><td>Mohammad Amir</td><td><img src="flag/pak.png" height="15px">&nbsp;PAK</td><td>638</td></tr>
+                    </table>
+                    <table class="windowtable" border="1" cellspacing="0">
+                        <thead><th colspan="4" class="rankhead">T20I</th></thead>
+                        <tr>
+                            <td>Rank</td>
+                            <td>Player</td>
+                            <td>Team</td>
+                            <td>Rating</td>
+                        </tr>
+                        <tr><td>1</td><td>Tabraiz Shamsi</td><td><img src="flag/sa.png" height="15px">&nbsp;SA</td><td>732</td></tr>
+                        <tr><td>2</td><td>Rashid Khan</td><td><img src="flag/afg.png" height="15px">&nbsp;AFG</td><td>719</td></tr>
+                        <tr><td>3</td><td>Ashton Agar</td><td><img src="flag/aus.png" height="15px">&nbsp;AUS</td><td>702</td></tr>
+                        <tr><td>4</td><td>Adil Rashid</td><td><img src="flag/eng.png" height="15px">&nbsp;ENG</td><td>694</td></tr>
+                        <tr><td>5</td><td>Mujeeb Ur Rahman</td><td><img src="flag/afg.png" height="15px">&nbsp;AFG</td><td>687</td></tr>
+                        <tr><td>6</td><td>Tim Southee</td><td><img src="flag/nz.png" height="15px">&nbsp;NZ</td><td>669</td></tr>
+                        <tr><td>7</td><td>Adam Zampa</td><td><img src="flag/aus.png" height="15px">&nbsp;AUS</td><td>663</td></tr>
+                        <tr><td>8</td><td>Ish Sodhi</td><td><img src="flag/nz.png" height="15px">&nbsp;NZ</td><td>640</td></tr>
+                        <tr><td>9</td><td>Lakshan Sandakan</td><td><img src="flag/sl.png" height="15px">&nbsp;SL</td><td>639</td></tr>
+                        <tr><td>7</td><td>Wanindu De Silva</td><td><img src="flag/sl.png" height="15px">&nbsp;SL</td><td>623</td></tr>
+                    </table>
+                    <table class="windowtable" border="1" cellspacing="0">
+                            <thead><th colspan="4" class="rankhead">Test</th></thead>
+                            <tr>
+                                <td>Rank</td>
+                                <td>Player</td>
+                                <td>Team</td>
+                                <td>Rating</td>
+                            </tr>
+                            <tr><td>1</td><td>Jason Holder</td><td><img src="flag/wi.png" height="15px">&nbsp;WI</td><td>423</td></tr>
+                            <tr><td>2</td><td>Ben Stokes</td><td><img src="flag/eng.png" height="15px">&nbsp;ENG</td><td>393</td></tr>
+                            <tr><td>3</td><td>Ravindra Jadeja</td><td><img src="flag/ind.png" height="15px">&nbsp;IND</td><td>386</td></tr>
+                            <tr><td>4</td><td>Ravichandran Ashwin</td><td><img src="flag/ind.png" height="15px">&nbsp;IND</td><td>353</td></tr>
+                            <tr><td>5</td><td>Shakib Al Hasan</td><td><img src="flag/ban.png" height="15px">&nbsp;BAN</td><td>352</td></tr>
+                            <tr><td>6</td><td>Tim Southee</td><td><img src="flag/nz.png" height="15px">&nbsp;NZ</td><td>811</td></tr>
+                            <tr><td>7</td><td>Mitchell Strac</td><td><img src="flag/aus.png" height="15px">&nbsp;AUS</td><td>275</td></tr>
+                            <tr><td>8</td><td>Colin be Grandhomme</td><td><img src="flag/nz.png" height="15px">&nbsp;NZ</td><td>258</td></tr>
+                            <tr><td>9</td><td>Pat Cummins</td><td><img src="flag/aus.png" height="15px">&nbsp;AUS</td><td>249</td></tr>
+                            <tr><td>10</td><td>Chris Woakes</td><td><img src="flag/eng.png" height="15px">&nbsp;ENG</td><td>238</td></tr>
+                        </table>
+                        <table class="windowtable" border="1" cellspacing="0">
+                            <thead><th colspan="4" class="rankhead">ODI</th></thead>
+                            <tr>
+                                <td>Rank</td>
+                                <td>Player</td>
+                                <td>Team</td>
+                                <td>Rating</td>
+                            </tr>
+                            <tr><td>1</td><td>Shakib Al Hasan</td><td><img src="flag/ban.png" height="15px">&nbsp;BAN</td><td>408</td></tr>
+                            <tr><td>2</td><td>Ben Stokes</td><td><img src="flag/eng.png" height="15px">&nbsp;ENG</td><td>295</td></tr>
+                            <tr><td>3</td><td>Mohammad Nabi</td><td><img src="flag/afg.png" height="15px">&nbsp;AFG</td><td>294</td></tr>
+                            <tr><td>4</td><td>Chris Woakes</td><td><img src="flag/eng.png" height="15px">&nbsp;ENG</td><td>273</td></tr>
+                            <tr><td>5</td><td>Rashid Khan</td><td><img src="flag/afg.png" height="15px">&nbsp;AFG</td><td>270</td></tr>
+                            <tr><td>6</td><td>Mitchell Santner</td><td><img src="flag/nz.png" height="15px">&nbsp;NZ</td><td>268</td></tr>
+                            <tr><td>7</td><td>Imad Wasim</td><td><img src="flag/pak.png" height="15px">&nbsp;PAK</td><td>263</td></tr>
+                            <tr><td>8</td><td>Colin be Grandhomme</td><td><img src="flag/nz.png" height="15px">&nbsp;NZ</td><td>257</td></tr>
+                            <tr><td>9</td><td>Ravindra Jadeja</td><td><img src="flag/ind.png" height="15px">&nbsp;IND</td><td>245</td></tr>
+                            <tr><td>10</td><td>Sean Williams</td><td><img src="flag/zim.png" height="15px">&nbsp;ZIM</td><td>238</td></tr>
+                        </table>
+                        <table class="windowtable" border="1" cellspacing="0" width="100%">
+                            <thead><th colspan="4" class="rankhead">T20I</th></thead>
+                            <tr>
+                                <td>Rank</td>
+                                <td>Player</td>
+                                <td>Team</td>
+                                <td>Rating</td>
+                            </tr>
+                            <tr><td>1</td><td>Mohammad Nabi</td><td><img src="flag/afg.png" height="15px">&nbsp;AFG</td><td>285</td></tr>
+                            <tr><td>2</td><td>Shakib Al Hasan</td><td><img src="flag/ban.png" height="15px">&nbsp;BAN</td><td>238</td></tr>
+                            <tr><td>3</td><td>Glenn Maxwell</td><td><img src="flag/aus.png" height="15px">&nbsp;AUS</td><td>226</td></tr>
+                            <tr><td>4</td><td>Richard Berrington</td><td><img src="flag/sco.png" height="15px">&nbsp;SCO</td><td>194</td></tr>
+                            <tr><td>5</td><td>Sean Williams</td><td><img src="flag/zim.png" height="15px">&nbsp;ZIM</td><td>179</td></tr>
+                            <tr><td>6</td><td>Gareth Delany</td><td><img src="flag/ire.png" height="15px">&nbsp;IRE</td><td>170</td></tr>
+                            <tr><td>7</td><td>Khawar Ali</td><td><img src="flag/oma.png" height="15px">&nbsp;OMA</td><td>159</td></tr>
+                            <tr><td>8</td><td>Collins Obuya</td><td><img src="flag/ken.png" height="15px">&nbsp;KEN</td><td>153</td></tr>
+                            <tr><td>9</td><td>Rohan Mustafa</td><td><img src="flag/uae.png" height="15px">&nbsp;UAE</td><td>152</td></tr>
+                            <tr><td>10</td><td>Zeeshan Maqsood</td><td><img src="flag/oma.png" height="15px">&nbsp;OMA</td><td>135</td></tr>
+                        </table>
+        </div>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        <!--Team Rankings/-->
+        <h2 onclick="toggle('team')">Team Rankings <span id="teamsign" style="float: right;">-</span></h2>
+            <div style="width: 100%" id="team" style="display: inline;">
+                <table class="rankingstable" border="1" cellspacing="0">
+                    <thead><th colspan="5" class="rankhead">Test<div class="maximize" onclick="maximize(0)">🡤🡥<br/>🡧🡦</div></th></thead>
+                    <tr>
+                        <td>Rank</td>
+                        <td>Country</td>
+                        <td>Matches</td>
+                        <td>Points</td>
+                        <td>Rating</td>
+                    </tr>
+                    <tr><td>1</td><td><img src="flag/ind.png" height="15px">&nbsp;India</td><td>37</td><td>4455</td><td>120</td></tr>
+                    <tr><td>2</td><td><img src="flag/nz.png" height="15px">&nbsp;Newzealand</td><td>27</td><td>3198</td><td>118</td></tr>
+                    <tr><td>3</td><td><img src="flag/aus.png" height="15px">&nbsp;Australia</td><td>31</td><td>3498</td><td>113</td></tr>
+                    <tr><td>4</td><td><img src="flag/eng.png" height="15px">&nbsp;England</td><td>49</td><td>5174</td><td>106</td></tr>
+                    <tr><td>5</td><td><img src="flag/pak.png" height="15px">&nbsp;Pakistan</td><td>26</td><td>2328</td><td>90</td></tr>
+                    <tr><td>6</td><td><img src="flag/sa.png" height="15px">&nbsp;South Africa</td><td>29</td><td>2595</td><td>89</td></tr>
+                    <tr><td>7</td><td><img src="flag/sl.png" height="15px">&nbsp;Sri Lanka</td><td>36</td><td>2982</td><td>83</td></tr>
+                    <tr><td>8</td><td><img src="flag/wi.png" height="15px">&nbsp;West Indes</td><td>31</td><td>2501</td><td>81</td></tr>
+                    <tr><td>9</td><td><img src="flag/ban.png" height="15px">&nbsp;Bangladesh</td><td>20</td><td>1020</td><td>51</td></tr>
+                    <tr><td>10</td><td><img src="flag/zim.png" height="15px">&nbsp;Zimbabwe</td><td>11</td><td>315</td><td>29</td></tr>
+                </table>
+                    <table class="rankingstable" border="1" cellspacing="0">
+                        <thead><th colspan="5" class="rankhead">ODI<div class="maximize" onclick="maximize(1)">🡤🡥<br/>🡧🡦</div></th></thead>
+                        <tr>
+                            <td>Rank</td>
+                            <td>Country</td>
+                            <td>Matches</td>
+                            <td>Points</td>
+                            <td>Rating</td>
+                        </tr>
+                        <tr><td>1</td><td><img src="flag/eng.png" height="15px">&nbsp;England</td><td>47</td><td>5708</td><td>121</td></tr>
+                        <tr><td>2</td><td><img src="flag/ind.png" height="15px">&nbsp;India</td><td>55</td><td>6520</td><td>119</td></tr>
+                        <tr><td>3</td><td><img src="flag/nz.png" height="15px">&nbsp;Newzealand</td><td>35</td><td>4344</td><td>118</td></tr>
+                        <tr><td>4</td><td><img src="flag/aus.png" height="15px">&nbsp;Australia</td><td>39</td><td>3596</td><td>111</td></tr>
+                        <tr><td>5</td><td><img src="flag/sa.png" height="15px">&nbsp;South Africa</td><td>34</td><td>3861</td><td>106</td></tr>
+                        <tr><td>6</td><td><img src="flag/pak.png" height="15px">&nbsp;Pakistan</td><td>38</td><td>3567</td><td>102</td></tr>
+                        <tr><td>7</td><td><img src="flag/ban.png" height="15px">&nbsp;Bangladesh</td><td>40</td><td>3372</td><td>89</td></tr>
+                        <tr><td>8</td><td><img src="flag/sl.png" height="15px">&nbsp;Sri Lanka</td><td>42</td><td>3802</td><td>80</td></tr>
+                        <tr><td>9</td><td><img src="flag/wi.png" height="15px">&nbsp;West Indes</td><td>49</td><td>1844</td><td>78</td></tr>
+                        <tr><td>10</td><td><img src="flag/afg.png" height="15px">&nbsp;Afghanistan</td><td>31</td><td>1316</td><td>59</td></tr>
+                    </table>
+                    <table class="rankingstable" border="1" cellspacing="0">
+                        <thead><th colspan="5" class="rankhead">T20I<div class="maximize" onclick="maximize(2)">🡤🡥<br/>🡧🡦</div></th></thead>
+                        <tr>
+                            <td>Rank</td>
+                            <td>Country</td>
+                            <td>Matches</td>
+                            <td>Points</td>
+                            <td>Rating</td>
+                        </tr>
+                        <tr><td>1</td><td><img src="flag/eng.png" height="15px">&nbsp;England</td><td>30</td><td>8166</td><td>272</td></tr>
+                        <tr><td>2</td><td><img src="flag/ind.png" height="15px">&nbsp;India</td><td>43</td><td>11613</td><td>270</td></tr>
+                        <tr><td>3</td><td><img src="flag/aus.png" height="15px">&nbsp;Australia</td><td>30</td><td>8005</td><td>267</td></tr>
+                        <tr><td>4</td><td><img src="flag/pak.png" height="15px">&nbsp;Pakistan</td><td>39</td><td>10137</td><td>260</td></tr>
+                        <tr><td>5</td><td><img src="flag/nz.png" height="15px">&nbsp;Newzealand</td><td>36</td><td>9181</td><td>255</td></tr>
+                        <tr><td>6</td><td><img src="flag/sa.png" height="15px">&nbsp;South Africa</td><td>27</td><td>6717</td><td>249</td></tr>
+                        <tr><td>7</td><td><img src="flag/afg.png" height="15px">&nbsp;Afghanistan</td><td>20</td><td>4601</td><td>230</td></tr>
+                        <tr><td>8</td><td><img src="flag/wi.png" height="15px">&nbsp;West Indes</td><td>29</td><td>6623</td><td>228</td></tr>
+                        <tr><td>9</td><td><img src="flag/sl.png" height="15px">&nbsp;Sri Lanka</td><td>26</td><td>5924</td><td>228</td></tr>
+                        <tr><td>10</td><td><img src="flag/ban.png" height="15px">&nbsp;Bangladesh</td><td>23</td><td>5194</td><td>226</td></tr>
+                    </table>
+                </div>
+
+        <h2 onclick="toggle('player')">Player Rankings<span id="playersign" style="float: right;">-</span></h2>
+        <!--Batting Rankings/-->
+        <div id="player" style="width: 100%;">
+        <h3 onclick="toggle('bat')">Batting Rankings<span id="batsign" style="float: right;">+</span></h3>
+                <div id="bat" style="display: none;" width="100%">
+                    <table class="rankingstable" border="1" cellspacing="0">
+                        <thead><th colspan="4" class="rankhead">Test<div class="maximize" onclick="maximize(3)">🡤🡥<br/>🡧🡦</div></th></thead>
+                        <tr>
+                            <td>Rank</td>
+                            <td>Player</td>
+                            <td>Team</td>
+                            <td>Rating</td>
+                        </tr>
+                        <tr><td>1</td><td>Kane Williamson</td><td><img src="flag/nz.png" height="15px">&nbsp;NZ</td><td>919</td></tr>
+                        <tr><td>2</td><td>Steve Smith</td><td><img src="flag/aus.png" height="15px">&nbsp;AUS</td><td>891</td></tr>
+                        <tr><td>3</td><td>Marnus Labuschagne</td><td><img src="flag/aus.png" height="15px">&nbsp;AUS</td><td>878</td></tr>
+                        <tr><td>4</td><td>Joe Root</td><td><img src="flag/eng.png" height="15px">&nbsp;ENG</td><td>831</td></tr>
+                        <tr><td>5</td><td>Virat Kohli</td><td><img src="flag/ind.png" height="15px">&nbsp;IND</td><td>814</td></tr>
+                        <tr><td>6</td><td>Bazar Azam</td><td><img src="flag/pak.png" height="15px">&nbsp;PAK</td><td>760</td></tr>
+                        <tr><td>7</td><td>Rishabh Pant</td><td><img src="flag/ind.png" height="15px">&nbsp;IND</td><td>747</td></tr>
+                        <tr><td>7</td><td>Henry Nicholis</td><td><img src="flag/nz.png" height="15px">&nbsp;NZ</td><td>747</td></tr>
+                        <tr><td>7</td><td>Rohit Sharma</td><td><img src="flag/ind.png" height="15px">&nbsp;IND</td><td>747</td></tr>
+                        <tr><td>10</td><td>David Warner</td><td><img src="flag/aus.png" height="15px">&nbsp;AUS</td><td>724</td></tr>
+                    </table>
+                    <table class="rankingstable" border="1" cellspacing="0">
+                        <thead><th colspan="4" class="rankhead">ODI<div class="maximize" onclick="maximize(4)">🡤🡥<br/>🡧🡦</div></th></thead>
+                        <tr>
+                            <td>Rank</td>
+                            <td>Player</td>
+                            <td>Team</td>
+                            <td>Rating</td>
+                        </tr>
+                        <tr><td>1</td><td>Bazar Azam</td><td><img src="flag/pak.png" height="15px">&nbsp;PAK</td><td>865</td></tr>
+                        <tr><td>2</td><td>Virat Kohli</td><td><img src="flag/ind.png" height="15px">&nbsp;IND</td><td>857</td></tr>
+                        <tr><td>3</td><td>Rohit Sharma</td><td><img src="flag/ind.png" height="15px">&nbsp;IND</td><td>825</td></tr>
+                        <tr><td>4</td><td>Ross Taylor</td><td><img src="flag/nz.png" height="15px">&nbsp;NZ</td><td>801</td></tr>
+                        <tr><td>5</td><td>Aaron Finch</td><td><img src="flag/aus.png" height="15px">&nbsp;AUS</td><td>791</td></tr>
+                        <tr><td>6</td><td>Jonny Bairstow</td><td><img src="flag/eng.png" height="15px">&nbsp;ENG</td><td>785</td></tr>
+                        <tr><td>7</td><td>Fakhar Zaman</td><td><img src="flag/pak.png" height="15px">&nbsp;PAK</td><td>778</td></tr>
+                        <tr><td>7</td><td>Francois du Plessis</td><td><img src="flag/sa.png" height="15px">&nbsp;SA</td><td>778</td></tr>
+                        <tr><td>9</td><td>David Warner</td><td><img src="flag/aus.png" height="15px">&nbsp;AUS</td><td>773</td></tr>
+                        <tr><td>9</td><td>Shai Hope</td><td><img src="flag/wi.png" height="15px">&nbsp;WI</td><td>773</td></tr>
+                    </table>
+                    <table class="rankingstable" border="1" cellspacing="0">
+                        <thead><th colspan="4" class="rankhead">T20I<div class="maximize" onclick="maximize(5)">🡤🡥<br/>🡧🡦</div></th></thead>
+                        <tr>
+                            <td>Rank</td>
+                            <td>Player</td>
+                            <td>Team</td>
+                            <td>Rating</td>
+                        </tr>
+                        <tr><td>1</td><td>Dawid Malan</td><td><img src="flag/eng.png" height="15px">&nbsp;ENG</td><td>892</td></tr>
+                        <tr><td>2</td><td>Bazar Azam</td><td><img src="flag/pak.png" height="15px">&nbsp;PAK</td><td>844</td></tr>
+                        <tr><td>3</td><td>Aaron Finch</td><td><img src="flag/aus.png" height="15px">&nbsp;AUS</td><td>830</td></tr>
+                        <tr><td>4</td><td>Devon Conway</td><td><img src="flag/nz.png" height="15px">&nbsp;NZ</td><td>774</td></tr>
+                        <tr><td>5</td><td>Virat Kohli</td><td><img src="flag/ind.png" height="15px">&nbsp;IND</td><td>762</td></tr>
+                        <tr><td>6</td><td>Rassie van der Dussen</td><td><img src="flag/sa.png" height="15px">&nbsp;SA</td><td>756</td></tr>
+                        <tr><td>7</td><td>Lokesh Rahul</td><td><img src="flag/ind.png" height="15px">&nbsp;IND</td><td>743</td></tr>
+                        <tr><td>8</td><td>Glenn Maxwell</td><td><img src="flag/aus.png" height="15px">&nbsp;AUS</td><td>694</td></tr>
+                        <tr><td>9</td><td>Martin Guptill</td><td><img src="flag/nz.png" height="15px">&nbsp;NZ</td><td>688</td></tr>
+                        <tr><td>10</td><td>Hazratullah</td><td><img src="flag/afg.png" height="15px">&nbsp;AFG</td><td>636</td></tr>
+                    </table>
+                </div>
+        
+        <!--Bowling Rankings/-->
+        <h3 onclick="toggle('bowl')">Bowling Rankings<span id="bowlsign" style="float: right;">+</span></h3>
+                <div id="bowl" style="display: none;" width="100%">
+                    <table class="rankingstable" border="1" cellspacing="0">
+                        <thead><th colspan="4" class="rankhead">Test<div class="maximize" onclick="maximize(6)">🡤🡥<br/>🡧🡦</div></th></thead>
+                        <tr>
+                            <td>Rank</td>
+                            <td>Player</td>
+                            <td>Team</td>
+                            <td>Rating</td>
+                        </tr>
+                        <tr><td>1</td><td>Pat Cummins</td><td><img src="flag/aus.png" height="15px">&nbsp;AUS</td><td>908</td></tr>
+                        <tr><td>2</td><td>Ravichandran Ashwin</td><td><img src="flag/ind.png" height="15px">&nbsp;IND</td><td>850</td></tr>
+                        <tr><td>3</td><td>Neil Wagner</td><td><img src="flag/nz.png" height="15px">&nbsp;NZ</td><td>825</td></tr>
+                        <tr><td>4</td><td>James Anderson</td><td><img src="flag/eng.png" height="15px">&nbsp;ENG</td><td>822</td></tr>
+                        <tr><td>5</td><td>Josh Hazelwood</td><td><img src="flag/aus.png" height="15px">&nbsp;AUS</td><td>816</td></tr>
+                        <tr><td>6</td><td>Tim Southee</td><td><img src="flag/nz.png" height="15px">&nbsp;NZ</td><td>811</td></tr>
+                        <tr><td>7</td><td>Staurt Broad</td><td><img src="flag/eng.png" height="15px">&nbsp;ENG</td><td>792</td></tr>
+                        <tr><td>8</td><td>Jason Holder</td><td><img src="flag/wi.png" height="15px">&nbsp;WI</td><td>755</td></tr>
+                        <tr><td>9</td><td>Kagiso Rabada</td><td><img src="flag/sa.png" height="15px">&nbsp;SA</td><td>753</td></tr>
+                        <tr><td>10</td><td>Mitchell Strac</td><td><img src="flag/aus.png" height="15px">&nbsp;AUS</td><td>744</td></tr>
+                    </table>
+                    <table class="rankingstable" border="1" cellspacing="0">
+                        <thead><th colspan="4" class="rankhead">ODI<div class="maximize" onclick="maximize(7)">🡤🡥<br/>🡧🡦</div></th></thead>
+                        <tr>
+                            <td>Rank</td>
+                            <td>Player</td>
+                            <td>Team</td>
+                            <td>Rating</td>
+                        </tr>
+                        <tr><td>1</td><td>Trent Boult</td><td><img src="flag/nz.png" height="15px">&nbsp;NZ</td><td>737</td></tr>
+                        <tr><td>2</td><td>Mujeeb Ur Rahman</td><td><img src="flag/ind.png" height="15px">&nbsp;IND</td><td>825</td></tr>
+                        <tr><td>3</td><td>Matt Henry</td><td><img src="flag/nz.png" height="15px">&nbsp;NZ</td><td>691</td></tr>
+                        <tr><td>4</td><td>Jasprit Bumrah</td><td><img src="flag/ind.png" height="15px">&nbsp;IND</td><td>690</td></tr>
+                        <tr><td>5</td><td>Mehedi Hasan</td><td><img src="flag/ban.png" height="15px">&nbsp;BAN</td><td>668</td></tr>
+                        <tr><td>6</td><td>Kagiso Rabada</td><td><img src="flag/sa.png" height="15px">&nbsp;SA</td><td>666</td></tr>
+                        <tr><td>7</td><td>Chris Woakes</td><td><img src="flag/eng.png" height="15px">&nbsp;ENG</td><td>665</td></tr>
+                        <tr><td>8</td><td>Josh Hazelwood</td><td><img src="flag/aus.png" height="15px">&nbsp;AUS</td><td>660</td></tr>
+                        <tr><td>9</td><td>Pat Cummins</td><td><img src="flag/aus.png" height="15px">&nbsp;AUS</td><td>646</td></tr>
+                        <tr><td>10</td><td>Mohammad Amir</td><td><img src="flag/pak.png" height="15px">&nbsp;PAK</td><td>638</td></tr>
+                    </table>
+                    <table class="rankingstable" border="1" cellspacing="0">
+                        <thead><th colspan="4" class="rankhead">T20I<div class="maximize" onclick="maximize(8)">🡤🡥<br/>🡧🡦</div></th></thead>
+                        <tr>
+                            <td>Rank</td>
+                            <td>Player</td>
+                            <td>Team</td>
+                            <td>Rating</td>
+                        </tr>
+                        <tr><td>1</td><td>Tabraiz Shamsi</td><td><img src="flag/sa.png" height="15px">&nbsp;SA</td><td>732</td></tr>
+                        <tr><td>2</td><td>Rashid Khan</td><td><img src="flag/afg.png" height="15px">&nbsp;AFG</td><td>719</td></tr>
+                        <tr><td>3</td><td>Ashton Agar</td><td><img src="flag/aus.png" height="15px">&nbsp;AUS</td><td>702</td></tr>
+                        <tr><td>4</td><td>Adil Rashid</td><td><img src="flag/eng.png" height="15px">&nbsp;ENG</td><td>694</td></tr>
+                        <tr><td>5</td><td>Mujeeb Ur Rahman</td><td><img src="flag/afg.png" height="15px">&nbsp;AFG</td><td>687</td></tr>
+                        <tr><td>6</td><td>Tim Southee</td><td><img src="flag/nz.png" height="15px">&nbsp;NZ</td><td>669</td></tr>
+                        <tr><td>7</td><td>Adam Zampa</td><td><img src="flag/aus.png" height="15px">&nbsp;AUS</td><td>663</td></tr>
+                        <tr><td>8</td><td>Ish Sodhi</td><td><img src="flag/nz.png" height="15px">&nbsp;NZ</td><td>640</td></tr>
+                        <tr><td>9</td><td>Lakshan Sandakan</td><td><img src="flag/sl.png" height="15px">&nbsp;SL</td><td>639</td></tr>
+                        <tr><td>7</td><td>Wanindu De Silva</td><td><img src="flag/sl.png" height="15px">&nbsp;SL</td><td>623</td></tr>
+                    </table>
+                </div>
+        
+        <!--All-Rounder Rankings/-->
+        <h3 onclick="toggle('all')">All-Rounder Rankings<span id="allsign" style="float: right;">+</span></h3>
+                <div id="all" style="display: none;" width="100%">
+                    <table class="rankingstable" border="1" cellspacing="0">
+                        <thead><th colspan="4" class="rankhead">Test<div class="maximize" onclick="maximize(9)">🡤🡥<br/>🡧🡦</div></th></thead>
+                        <tr>
+                            <td>Rank</td>
+                            <td>Player</td>
+                            <td>Team</td>
+                            <td>Rating</td>
+                        </tr>
+                        <tr><td>1</td><td>Jason Holder</td><td><img src="flag/wi.png" height="15px">&nbsp;WI</td><td>423</td></tr>
+                        <tr><td>2</td><td>Ben Stokes</td><td><img src="flag/eng.png" height="15px">&nbsp;ENG</td><td>393</td></tr>
+                        <tr><td>3</td><td>Ravindra Jadeja</td><td><img src="flag/ind.png" height="15px">&nbsp;IND</td><td>386</td></tr>
+                        <tr><td>4</td><td>Ravichandran Ashwin</td><td><img src="flag/ind.png" height="15px">&nbsp;IND</td><td>353</td></tr>
+                        <tr><td>5</td><td>Shakib Al Hasan</td><td><img src="flag/ban.png" height="15px">&nbsp;BAN</td><td>352</td></tr>
+                        <tr><td>6</td><td>Tim Southee</td><td><img src="flag/nz.png" height="15px">&nbsp;NZ</td><td>811</td></tr>
+                        <tr><td>7</td><td>Mitchell Strac</td><td><img src="flag/aus.png" height="15px">&nbsp;AUS</td><td>275</td></tr>
+                        <tr><td>8</td><td>Colin be Grandhomme</td><td><img src="flag/nz.png" height="15px">&nbsp;NZ</td><td>258</td></tr>
+                        <tr><td>9</td><td>Pat Cummins</td><td><img src="flag/aus.png" height="15px">&nbsp;AUS</td><td>249</td></tr>
+                        <tr><td>10</td><td>Chris Woakes</td><td><img src="flag/eng.png" height="15px">&nbsp;ENG</td><td>238</td></tr>
+                    </table>
+                    <table class="rankingstable" border="1" cellspacing="0">
+                        <thead><th colspan="4" class="rankhead">ODI<div class="maximize" onclick="maximize(10)">🡤🡥<br/>🡧🡦</div></th></thead>
+                        <tr>
+                            <td>Rank</td>
+                            <td>Player</td>
+                            <td>Team</td>
+                            <td>Rating</td>
+                        </tr>
+                        <tr><td>1</td><td>Shakib Al Hasan</td><td><img src="flag/ban.png" height="15px">&nbsp;BAN</td><td>408</td></tr>
+                        <tr><td>2</td><td>Ben Stokes</td><td><img src="flag/eng.png" height="15px">&nbsp;ENG</td><td>295</td></tr>
+                        <tr><td>3</td><td>Mohammad Nabi</td><td><img src="flag/afg.png" height="15px">&nbsp;AFG</td><td>294</td></tr>
+                        <tr><td>4</td><td>Chris Woakes</td><td><img src="flag/eng.png" height="15px">&nbsp;ENG</td><td>273</td></tr>
+                        <tr><td>5</td><td>Rashid Khan</td><td><img src="flag/afg.png" height="15px">&nbsp;AFG</td><td>270</td></tr>
+                        <tr><td>6</td><td>Mitchell Santner</td><td><img src="flag/nz.png" height="15px">&nbsp;NZ</td><td>268</td></tr>
+                        <tr><td>7</td><td>Imad Wasim</td><td><img src="flag/pak.png" height="15px">&nbsp;PAK</td><td>263</td></tr>
+                        <tr><td>8</td><td>Colin be Grandhomme</td><td><img src="flag/nz.png" height="15px">&nbsp;NZ</td><td>257</td></tr>
+                        <tr><td>9</td><td>Ravindra Jadeja</td><td><img src="flag/ind.png" height="15px">&nbsp;IND</td><td>245</td></tr>
+                        <tr><td>10</td><td>Sean Williams</td><td><img src="flag/zim.png" height="15px">&nbsp;ZIM</td><td>238</td></tr>
+                    </table>
+                    <table class="rankingstable" border="1" cellspacing="0" width="100%">
+                        <thead><th colspan="4" class="rankhead">T20I<div class="maximize" onclick="maximize(11)">🡤🡥<br/>🡧🡦</div></th></thead>
+                        <tr>
+                            <td>Rank</td>
+                            <td>Player</td>
+                            <td>Team</td>
+                            <td>Rating</td>
+                        </tr>
+                        <tr><td>1</td><td>Mohammad Nabi</td><td><img src="flag/afg.png" height="15px">&nbsp;AFG</td><td>285</td></tr>
+                        <tr><td>2</td><td>Shakib Al Hasan</td><td><img src="flag/ban.png" height="15px">&nbsp;BAN</td><td>238</td></tr>
+                        <tr><td>3</td><td>Glenn Maxwell</td><td><img src="flag/aus.png" height="15px">&nbsp;AUS</td><td>226</td></tr>
+                        <tr><td>4</td><td>Richard Berrington</td><td><img src="flag/sco.png" height="15px">&nbsp;SCO</td><td>194</td></tr>
+                        <tr><td>5</td><td>Sean Williams</td><td><img src="flag/zim.png" height="15px">&nbsp;ZIM</td><td>179</td></tr>
+                        <tr><td>6</td><td>Gareth Delany</td><td><img src="flag/ire.png" height="15px">&nbsp;IRE</td><td>170</td></tr>
+                        <tr><td>7</td><td>Khawar Ali</td><td><img src="flag/oma.png" height="15px">&nbsp;OMA</td><td>159</td></tr>
+                        <tr><td>8</td><td>Collins Obuya</td><td><img src="flag/ken.png" height="15px">&nbsp;KEN</td><td>153</td></tr>
+                        <tr><td>9</td><td>Rohan Mustafa</td><td><img src="flag/uae.png" height="15px">&nbsp;UAE</td><td>152</td></tr>
+                        <tr><td>10</td><td>Zeeshan Maqsood</td><td><img src="flag/oma.png" height="15px">&nbsp;OMA</td><td>135</td></tr>
+                    </table>
+                </div>
+        </div>
+        <br><br><br><br>
+    </body>
+</html>

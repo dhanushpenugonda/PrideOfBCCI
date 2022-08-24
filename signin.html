@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login profile</title>
+        <link rel="stylesheet" href="player.css">
+        <script type="text/javascript" src="script.js"></script>
+        <style>
+            body {
+                background-image: url("images/bat-ball.jpg");
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: center;
+                background-size: cover;
+            }
+
+            #form_box{
+                width: 300px;
+                height: 410px;
+                margin: 8%;
+                position: right center;
+                background: #fff;
+                padding: 6px;
+                background: transparent;
+                backdrop-filter: blur(8px);  
+                border-radius: 20px;
+                box-shadow: 0px 0px 40px 0px green;
+            }
+
+            h3{
+                text-align: center;
+                position: relative;
+            }
+
+            #uname,#upassword{
+                width: 100%;
+                padding: 10px 0;
+                margin: 5px 0;
+                border-left: 0;
+                border-top: 0;
+                border-right: 0;
+                border-bottom: 1px solid #999;
+                background: transparent;
+            }
+
+            #login_button,#register_botton{
+                text-align: center;
+                width: 85%;
+                padding: 10px 30px;
+                cursor: pointer;
+                display: block;
+                font-weight: bold;
+                margin: auto;
+                background: linear-gradient(to right, #ff105f,#ffad06);
+                background-origin: 0;
+                border-radius: 30px;
+            }
+
+            #login_button:hover,#register_botton:hover{
+                background: linear-gradient(to right, #f05a8c,#ecc068);
+                color: #fff;
+            }
+            .menubuttons{
+                background: transparent;
+            }
+        </style>
+    </head>
+    <body>
+        <table class="homebar" style="width: 100%; background: transparent; border-radius: 5px; box-shadow: 0px 0px 40px 0px green;" border="0" cellspacing="0">
+            <colgroup>
+                <col style="width: 50%;">
+                <col style="width: 8%;">
+                <col style="width: 8%;">
+                <col style="width: 8%;">
+                <col style="width: 8%;">
+                <col style="width: 8%;">
+                <col style="width: 10%;">
+            </colgroup>
+            <tr>
+                <td>&nbsp;&nbsp;<a class="homebutton" href="home.html"><img class="logo" src="1200px-Cricket_India_Crest.svg.png" width="50">&nbsp;Indian Cricket</a></td>
+                <td><a href="achieve.html"><button class="menubuttons" type="button">Achievements</button></a></td>
+                <td><a href="player.html"><button class="menubuttons" type="button" onmouseover="disp_arrow()" onmouseout="nodisp_arrow()">Players <i class="arrow" onmouseover="disp_list()"></i></button></a></td>
+                <td><a href="rankings.html"><button class="menubuttons" type="button">Rankings</button></a></td>
+                <td><a href="stadium.html"><button class="menubuttons" type="button">Stadiums</button></a></td>
+                <td><a href="quiz.html"><button class="menubuttons" type="button">Quiz</button></a></td>
+                <td style="text-align: right;"><a href="signin.html"><img src="home/login.png" class="signin"></a></td>
+            </tr>
+        </table>
+        <div class="plist">
+            <ul>
+                <li><a href="virat.html">Virat Kohli</a></li>
+                <li><a href="rohit.html">Rohit Sharma</a></li>
+                <li><a href="bumrah.html">Jasprit Bumrah</a></li>
+                <li><a href="ashwin.html">Ravichandran Ashwin</a></li>
+                <li><a href="jadeja.html">Ravindra Jadeja</a></li>
+                <li><a href="pujara.html">Cheteshwar Pujara</a></li>
+                <li><a href="rahane.html">Ajikya Rahane</a></li>
+                <li><a href="dhawan.html">Shikar Dhawan</a></li>
+                <li><a href="rahul.html">KL Rahul</a></li>
+                <li><a href="shami.html">Mohammad Shami</a></li>
+                <li><a href="ishant.html">Ishant Sharma</a></li>
+                <li><a href="pant.html">Rishabh Pant</a></li>
+                <li><a href="hardik.html">Hardik Pandya</a></li>
+                <li><a href="saha.html">Wriddhiman Saha</a></li>
+                <li><a href="umesh.html">Umesh Yadav</a></li>
+                <li><a href="bhuvi.html">Bhuneshwar Kumar</a></li>
+                <li><a href="kuldeep.html">Kuldeep Yadav</a></li>
+                <li><a href="axar.html">Axar Patel</a></li>
+                <li><a href="shreyas.html">Shreyas Iyer</a></li>
+                <li><a href="chahal">Yusvendra Chahal</a></li>
+            </ul>
+            <div id="cancel" onclick="nodisp_list()">Cancel</div>
+        </div>
+        
+        </br></br></br>
+        <div id="form_box" >
+            <div>
+                <form onsubmit="return validate()" action="Home.html">
+                    <h3>Username</h3>
+                    <input type="text" id="uname" placeholder="username">
+                    <h3>Password</h3>
+                    <input type="password" id="upassword" placeholder="Password">
+                    <h3 id="invalidPass" style="color: lightgoldenrodyellow; visibility: hidden; text-align: center;">Incorrect credential</h3>
+                    <button type="submit" id="login_button">Submit</button>
+                </form>
+            </div>
+            <hr>
+            <div>
+                <form action="sign up.html">
+                    <button type="submit" id="register_botton">Register</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

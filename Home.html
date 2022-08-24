@@ -1,0 +1,367 @@
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="player.css">
+        <script type="text/javascript" src="script.js"></script>
+        <style>
+            body{
+                background-image: url('home/bgimage8.jpg');
+                background-position: top 0% left 0%;
+                background-attachment: unset;
+                background-repeat: repeat;
+            }
+            /* stadiums */
+            * {box-sizing:border-box}
+            .slideshow-container1 {
+                max-width: 1000px;
+                margin: auto;
+            }
+            .slideshow-container1 .mySlides1 img{
+                height: 450px;
+            }
+            .mySlides1 {
+                display: none;
+            }
+            .text {
+                color: #f2f2f2;
+                font-size: 20px;
+                padding: 8px 12px;
+                position: relative;
+                bottom: 38px;
+                width: 100%;
+                text-align: center;
+            }
+            .numbertext1 {
+                bottom: 200px;
+                color: black;
+                font-size: 20px;
+                padding: 8px 12px;
+                position: relative;
+                top: 0;
+            }
+            .dot1 {
+                cursor: pointer;
+                height: 15px;
+                width: 15px;
+                margin: 0 2px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+            }
+            .active1, .dot1:hover {
+                background-color: #717171;
+            }
+
+            .fade1 {
+                animation-name: fade1;
+                animation-duration: 1.5s;
+            }
+            @keyframes fade1 {
+                from {opacity: .4}
+                to {opacity: 1}
+            }
+
+
+            /* achiments styles */
+            .container {
+                position: relative;
+                width: 80%;
+                margin: auto;
+                border: solid 2px black;
+            }
+            .mySlides {
+                display: none;
+            }
+
+            .cursor {
+                cursor: pointer;
+            }
+
+            .numbertext {
+                color: #f2f2f2;
+                font-size: 12px;
+                padding: 8px 12px;
+                position: absolute;
+                top: 0;
+            }
+
+            .caption-container {
+                text-align: center;
+                background-color: #222;
+                padding: 2px 16px;
+                color: white;
+            }
+
+            .row .column img{
+                height: 150px;
+            }
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            .column {
+                float: left;
+                width: 16.66%;
+            }
+
+            .demo {
+                opacity: 0.6;
+            }
+
+            .active,
+            .demo:hover {
+                opacity: 1;
+            }
+            a{
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <table class="homebar" border="0" cellspacing="0">
+            <colgroup>
+                <col style="width: 50%;">
+                <col style="width: 8%;">
+                <col style="width: 8%;">
+                <col style="width: 8%;">
+                <col style="width: 8%;">
+                <col style="width: 8%;">
+                <col style="width: 10%;">
+            </colgroup>
+            <tr>
+                <td>&nbsp;&nbsp;<a class="homebutton" href="home.html"><img class="logo" src="logo.jpeg" width="50">&nbsp;Indian Cricket</a></td>
+                <td><a href="achieve.html"><button class="menubuttons" type="button">Achievements</button></a></td>
+                <td><a href="player.html"><button class="menubuttons" type="button" onmouseover="disp_arrow()" onmouseout="nodisp_arrow()">Players <i class="arrow" onmouseover="disp_list()"></i></button></a></td>
+                <td><a href="rankings.html"><button class="menubuttons" type="button">Rankings</button></a></td>
+                <td><a href="stadium.html"><button class="menubuttons" type="button">Stadiums</button></a></td>
+                <td><a href="quiz.html"><button class="menubuttons" type="button">Quiz</button></a></td>
+                <td style="text-align: right;"><a href="signin.html"><img src="home/login.png" class="signin"></a></td>
+            </tr>
+        </table>
+        <div class="plist">
+            <ul>
+                <li><a href="virat.html">Virat Kohli</a></li>
+                <li><a href="rohit.html">Rohit Sharma</a></li>
+                <li><a href="bumrah.html">Jasprit Bumrah</a></li>
+                <li><a href="ashwin.html">Ravichandran Ashwin</a></li>
+                <li><a href="jadeja.html">Ravindra Jadeja</a></li>
+                <li><a href="pujara.html">Cheteshwar Pujara</a></li>
+                <li><a href="rahane.html">Ajikya Rahane</a></li>
+                <li><a href="dhawan.html">Shikar Dhawan</a></li>
+                <li><a href="rahul.html">KL Rahul</a></li>
+                <li><a href="shami.html">Mohammad Shami</a></li>
+                <li><a href="ishant.html">Ishant Sharma</a></li>
+                <li><a href="pant.html">Rishabh Pant</a></li>
+                <li><a href="hardik.html">Hardik Pandya</a></li>
+                <li><a href="saha.html">Wriddhiman Saha</a></li>
+                <li><a href="umesh.html">Umesh Yadav</a></li>
+                <li><a href="bhuvi.html">Bhuneshwar Kumar</a></li>
+                <li><a href="kuldeep.html">Kuldeep Yadav</a></li>
+                <li><a href="axar.html">Axar Patel</a></li>
+                <li><a href="shreyas.html">Shreyas Iyer</a></li>
+                <li><a href="chahal">Yusvendra Chahal</a></li>
+            </ul>
+            <div id="cancel" onclick="nodisp_list()">Cancel</div>
+        </div>
+    </br></br></br></br></br></br></br></br></br></br>
+        <img class="ballstump" src="home/cricketball.png">
+        <div class="stump1"></div>
+        <div class="stump2"></div>
+        <div class="bail1"></div>
+        <div class="bail2"></div>
+        <center>
+            <table class="infotable">
+            <tr>
+                <td><center><a href="rohit.html"><img src="home/hitman2.jfif" alt="ROHITH SHARMA" width="50%"></center></td>
+                <td><center><a href="virat.html"><img src="home/king kohli.jpg" alt="VIRAT KOHLI" width="120%"></center></td>
+                <td><center><a href="rahul.html"><img src="home/kl6.jpg" alt="KL RAHUL" width="50%"></center></td>
+            </tr>
+            </table>
+        </center>
+        <br><br>
+        <br><br><br>
+        <div style="width: 100%; border: 1px solid; background: rgb(37, 37, 92); font-size: larger; color: white; vertical-align: center;">World Cup Achievements</div>
+        <br><br><br>
+
+        
+        <div class="container">
+            <a href="achieve.html">
+            <div class="mySlides">
+              <div class="numbertext">1 / 6</div>
+                <img src="achieve/2001.jpg" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">2 / 6</div>
+                <img src="achieve/2007.jpg" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">3 / 6</div>
+                <img src="https://statics.sportskeeda.com/wp-content/uploads/2013/04/icc-cricket-world-cup-2011-1494355.jpg" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">4 / 6</div>
+                <img src="http://www.cricket365.ca/wp-content/uploads/2017/05/India-won-Champions-Trophy-2013.jpg" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">5 / 6</div>
+                <img src="http://p.imgci.com/db/PICTURES/CMS/284200/284202.4.jpg" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">6 / 6</div>
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.sify.com%2Fuploads%2Findia_gabba_series_win_umxhj8jfiaddb.jpeg&f=1&nofb=1" style="width:100%">
+            </div>
+            </a>
+          
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+          
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="achieve/2001.jpg" style="width:100%" onclick="currentSlide(1)" alt="2001">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="achieve/2007.jpg" style="width:100%" onclick="currentSlide(2)" alt="2007">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="https://statics.sportskeeda.com/wp-content/uploads/2013/04/icc-cricket-world-cup-2011-1494355.jpg" style="width:100%" onclick="currentSlide(3)" alt="2011">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="http://www.cricket365.ca/wp-content/uploads/2017/05/India-won-Champions-Trophy-2013.jpg" style="width:100%" onclick="currentSlide(4)" alt="2013">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="http://p.imgci.com/db/PICTURES/CMS/284200/284202.4.jpg" style="width:100%" onclick="currentSlide(5)" alt="2016*">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.sify.com%2Fuploads%2Findia_gabba_series_win_umxhj8jfiaddb.jpeg&f=1&nofb=1" style="width:100%" onclick="currentSlide(6)" alt="2021">
+                </div>
+            </div>
+        </div>
+        
+        <br><br>
+        <br><br>
+        <div style="width: 100%; border: 1px solid; background: rgb(37, 37, 92); font-size: larger; color: white; vertical-align: center;">India Stadiums</div>
+        <br><br>
+        <a href="stadium.html">
+        <div class="slideshow-container1">
+            <div class="mySlides1 fade1">
+              <div class="numbertext1">1 / 8</div>
+              <img src="stadium/chidambaram.jpg" style="width:100%">
+              <div class="text">M. A. Chidambaram Stadium</div>
+            </div>
+            <div class="mySlides1 fade1">
+              <div class="numbertext1">2 / 8</div>
+              <img src="stadium/eden.jpg" style="width:100%">
+              <div class="text">Eden Gardens</div>
+            </div>
+            <div class="mySlides1 fade1">
+              <div class="numbertext1">3 / 8</div>
+              <img src="stadium/hpca.jpg" style="width:100%">
+              <div class="text">HPCA Stadium</div>
+            </div>
+            <div class="mySlides1 fade1">
+                <div class="numbertext1">4 / 8</div>
+                <img src="stadium/chinnaswamy.jpg" style="width:100%">
+                <div class="text">M. Chinnaswamy Stadium</div>
+            </div>
+            <div class="mySlides1 fade1">
+                <div class="numbertext1">5 / 8</div>
+                <img src="stadium/aca-vdca.jpg" style="width:100%">
+                <div class="text">ACA–VDCA Cricket Stadium</div>
+            </div>
+              <div class="mySlides1 fade1">
+                <div class="numbertext1">6 / 8</div>
+                <img src="stadium/ferozshah.jpg" style="width:100%">
+                <div class="text">Feroz Shah Kotla Ground</div>
+              </div>
+              <div class="mySlides1 fade1">
+                <div class="numbertext1">7 / 8</div>
+                <img src="stadium/nehru.jpg" style="width:100%">
+                <div class="text">Nehru Stadium</div>
+              </div>
+              <div class="mySlides1 fade1">
+                <div class="numbertext1">8 / 8</div>
+                <img src="stadium/barabati.jpg" style="width:100%">
+                <div class="text">Barabati Stadium</div>
+              </div>
+          </div>
+          </a>
+          <br>
+          <div style="text-align:center">
+            <span class="dot1" onclick="currentSlide(1)"></span>
+            <span class="dot1" onclick="currentSlide(2)"></span>
+            <span class="dot1" onclick="currentSlide(3)"></span>
+            <span class="dot1" onclick="currentSlide(4)"></span>
+            <span class="dot1" onclick="currentSlide(5)"></span>
+            <span class="dot1" onclick="currentSlide(6)"></span>
+            <span class="dot1" onclick="currentSlide(7)"></span>
+            <span class="dot1" onclick="currentSlide(8)"></span>
+        </div>
+        <br><br>
+        <br><br>
+        <div class="subhead">Sponsors for indian Cricket Team</div>
+        <br><br>
+        <table>
+            <tr>
+                <td style="text-align: right;"><img src="home/byjus.png" alt="BYJU's" width="60%"></td>
+                <td style="text-align: center;"><img src="home/mpl.png" alt="MPL" width="60%"></td>
+                <td style="text-align: left;"><img src="home/nike.png" alt="nike" width="60%"></td>
+            </tr>
+        </table>
+        <script>
+                var slideIndex1 = 0;
+                showSlides1();
+                function showSlides1() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides1");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex1++;
+                if (slideIndex1 > slides.length) {slideIndex1 = 1}
+                slides[slideIndex1-1].style.display = "block";
+                setTimeout(showSlides1, 2000);
+                }
+    
+    
+    
+    
+    
+    
+    
+    
+                var slideIndex = 1;
+                showSlides(slideIndex);
+    
+                function currentSlide(n) {
+                showSlides(slideIndex = n);
+                }
+    
+                function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("demo");
+                var captionText = document.getElementById("caption");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+                captionText.innerHTML = dots[slideIndex-1].alt;
+                }
+            </script>
+    </body>
+</html>

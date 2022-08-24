@@ -1,0 +1,581 @@
+/*Common for all except home*/
+body{
+    background-image: linear-gradient(to right,rgb(119, 212, 255),);
+    background-image: url('background1.png');
+    background-position: top 50% left 50%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: rgb(210, 241, 255);
+    padding-top: 0px;
+    margin: 0px;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1{
+    text-align: center;
+    animation: heading 3s infinite;
+    text-shadow: 6px 6px 10px black;
+}
+
+@keyframes heading {
+    0%  {color: red;}
+    25% {color: blue;}
+    50% {color: green;}
+    75% {color: blue;}
+    100%{color: red;}
+}
+::-webkit-scrollbar {
+    width: 5px;
+    margin: 0px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+
+/*Common for all pages*/
+.homebar{
+    height: 60px;
+    width: 100%;
+    background: darkblue;
+    position: fixed;
+    padding: 0px;
+    margin: 0px;
+    z-index: 200;
+}
+.homebutton {
+    text-decoration: none;
+    font-size: 40px;
+    color: white;
+    margin: 20px;
+}
+.homebutton:hover {
+    color: lightgrey;
+}
+.logo{
+    position: relative;
+    top: 5px;
+}
+.menubuttons{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    background-color: darkblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+.menubuttons:hover{
+    background-color: rgb(55, 65, 211);
+}
+.arrow{
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    margin: 0px 0px 2.5px 5px;
+    transform: rotate(45deg);
+    display: none;
+}
+#cancel{
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.6);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    position: fixed;
+    width: 8%;
+    top: 195px;
+}
+#cancel:hover{
+    background-color: red;
+}
+.plist{
+    position: fixed;
+    top: 45px;
+    right: 34%;
+    z-index: 100;
+    width: 8%;
+    height: 150px;
+    overflow-y: auto;
+    display: none;
+    z-index: 200;
+}
+.plist ul{
+    list-style-type: none;
+    font-size: medium;
+    padding: 2px;
+    margin: 0px;
+}
+.plist ul li:nth-child(even){
+    background-color: rgb(233, 235, 245);
+}
+.plist ul li:nth-child(odd){
+    background-color: rgb(207, 213, 234);
+}
+.plist ul li{
+    padding: 2px;
+    border-bottom: 1px solid black;
+}
+.plist ul li:hover{
+    cursor: pointer;
+}
+.plist ul li a{
+    text-decoration: none;
+    color: rgb(21, 90, 133);
+}
+.plist ul li a:hover{
+    color: black;
+}
+.signin{
+    width: 50px;
+    margin-right: 10px;
+}
+
+
+/*Only for players' pages*/
+.subhead{
+    width: 100%;
+    border: 1px solid;
+    background: rgb(37, 37, 92);
+    font-size: larger;
+    color: white;
+    vertical-align: center;
+    padding-left: 7px;
+}
+
+
+
+.playerimg {
+    background-color: transparent;
+    height: 230.4px;
+    width: 230.4px;
+    perspective: 1000px;
+    margin: 0 auto;
+}
+  
+.playerimg-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+  
+.playerimg:hover .playerimg-inner {
+    transform: rotateY(180deg);
+}
+  
+.playerimg-front, .playerimg-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    backface-visibility: hidden;
+}
+  
+.playerimg-front {
+    color: black;
+}
+  
+.playerimg-back {
+    background-image: linear-gradient(to bottom left,#8abfe2,#0a588d);
+    /* background-color: #2980b9; */
+    color: white;
+    transform: rotateY(180deg);
+    width: 80%;
+    height: 80%;
+    padding: 10%;
+}
+.playerimg-front img{
+    border-radius: 96px;
+    width: 192px;
+    width: 230.4px;
+    border-radius: 115.2px;
+    border: 1px solid black;
+    background: linear-gradient(260deg,#009bfe,#0a4199);
+}
+.playerimg-back h1{
+    color: black;
+    animation: none;
+}
+.fb{
+    height: 40px;
+    padding-bottom: -15px;
+}
+.insta{
+    height: 32px;
+    padding-bottom: 4px;
+}
+.fb, .insta{
+    margin: 10px;
+}
+.pinfo{
+    margin: 10px;
+    width: 85%;
+    font-size: large;
+    text-align: justify;
+}
+.infotable{
+    font-size: large;
+    width: 100%;
+}
+.batbowl{
+    font-size: larger;
+}
+.careerheading{
+    font-weight: bold;
+}
+
+/*Home*/
+.list{
+    font-size: 20px;
+    list-style-image: url('home/ball.png');
+    line-height: 1.8em;
+}
+
+/*Achieve*/
+.wrapper {
+    margin: 0 auto;
+    padding: 0 16.66% 50px;
+    width: 100%;
+}
+.timeline__nav a:hover{
+    background-color: rgb(101, 165, 42);
+    text-align: center;
+    width: 100%;
+    padding: 1px 9px;
+    cursor:progress;
+    display:ruby-text;
+    font-weight:bolder;
+    margin: auto;
+    background: linear-gradient(to right, #eb660e,#55f809);
+    background-origin: 0;
+    border-radius: 25px;
+}
+  
+.center{
+    display: block;
+    margin-left: 31%;
+    width: 40%;
+}
+.timeline__nav{
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    transition: top 0.3s ease-out;
+    background-color: #35C5FF;
+    height: 100%;
+}
+.timeline__nav a{
+    text-decoration: none;
+    color: white;
+    overflow: scroll;
+}
+  
+.timeline__nav ul li {
+    margin: 10px 10px 0 0;
+    padding-right: 10px;
+    list-style-type: none;
+    color: #bfc1c3;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+.wrapper li{
+    list-style-type: none;
+}
+
+/*Player*/
+.dialog-box{
+    position: absolute;
+    left: 810px;
+    top: 720px;
+    z-index: 100;
+    display: none;
+}
+.dialog-box-para{
+    position: absolute;
+    width: 10em;
+    background-color: #fff;
+    padding: 0.625em 1em;
+    font-size: 0.75em;
+    border-radius: 0.5rem;
+    box-shadow:	0 0.125rem 0.5rem rgba(0, 0, 0, .5);
+    display: none;
+}
+
+.dialog-box-para::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 100%;
+    left: 45%;
+    border: .75rem solid transparent;
+    /* border-top: none; */
+    border-bottom-color: #fff;
+    filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, .2));
+}
+.playerinfo{
+    width: 192px;
+    border: 1px solid black;
+    background: radial-gradient(#009bfe,#0a4199);
+}
+.playerinfo:hover{
+    background: radial-gradient(#6be2f1,#06086e);
+}
+#gall{
+    background-color: black;
+    width: 80%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 30px;
+    padding: 30px;
+}
+#gall img{
+    width: 100%;
+    cursor: pointer;
+    transition: 0.4s
+}
+.gallimg:hover:nth-child(even){
+    transform: scale(0.9) rotate(-10deg);
+    border-radius: 10px;
+    box-shadow: 0 16px 100px grey;
+}
+.gallimg:hover:nth-child(odd){
+    transform: scale(0.9) rotate(10deg);
+    border-radius: 10px;
+    box-shadow: 0 16px 100px grey;
+}
+
+/*Rankings*/
+.rankingstable{
+    font-size: large;
+    width: 31%;
+    margin: 1%;
+    float: left;
+}
+.rankhead{
+    text-align: left;
+    border: none;
+    font-size: larger;
+    float: center;
+    padding: 5px;
+}
+.maximize, .minimize{
+    line-height: 8px;
+    font-size: 10px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+    vertical-align: middle;
+    color: #888;
+}
+.maximize:hover, .minimize:hover{
+    cursor: pointer;
+    color: #444;
+}
+.minimize{
+    margin: 20px;
+    font-size: 15px;
+    line-height: 12px;
+}
+#window{
+    position: fixed;
+    top: 5%;
+    z-index: 100;
+    width: 90%;
+    margin: 2.5% 5%;
+    height: 80%;
+    background-image: url("background0.png");
+    background-position: top 20% left 10%;
+    border: 1px solid black;
+    display: none;
+    box-shadow: 0px 0px 75px 15px #000;
+}
+.windowtable{
+    width: 80%;
+    margin: 5% 10%;
+    font-size: 1.2em;
+}
+
+/*Stadium*/
+.stadium{
+    border: 1px solid blue;
+    width: 450px;
+    margin: 15px;
+}
+.stadium:hover{
+    box-shadow: 0 0 10px 10px #888;
+}
+
+/*Quiz*/
+.rules{
+    width: 92%;
+    margin: 2%;
+    background-color: rgba(255, 0, 0, 0.3);
+    color: darkred;
+    padding: 2%;
+    border: 2px dashed red;
+    border-radius: 10px;
+}
+.submit{
+    width: 80px;
+    height: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    background-color: darkblue;
+    color: white;
+    cursor: pointer;
+    margin: 20px 10px 10px 10px;
+}
+.submit:hover{
+    box-shadow: 0px 2px black;
+    transform: translateY(-2px);
+}
+.option{
+    padding: 10px;
+    margin: 5px;
+    width: 15%;
+
+}
+.option:hover, .option label input:hover{
+    background-color: lightgrey;
+    cursor: pointer;
+}
+.polls{
+    background-color: white;
+    width: 25%;
+    height: 25%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+    margin: 2%;
+    padding: 1% 2%;
+}
+.poll-q{
+    margin-top: 5%;
+}
+.polls-inner{
+    height: 40%;
+    width: 90%;
+    color: white;
+    margin-top: 10.5%;
+    background-color: #082D69;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.poll1, .poll2{
+    padding: 6% 6%;
+    width: 40%;
+    height: 20%;
+    margin: 1%;
+    font-size: 15px;
+    font-family: Titillium Web,sans-serif;
+    border-radius: 5px;
+}
+.poll1:hover, .poll2:hover{
+    cursor: pointer;
+}
+.poll1{
+    padding: 8% 0% 8% 4%;
+    float: left;
+}
+.poll2{
+    padding: 8% 4% 8% 0%;
+    float: right;
+    text-align: right;
+}
+.votes{
+    float: left;
+    margin-top: 0%;
+    color: #888;
+    font-size: 12px;
+    font-family: 'Courier New', Courier, monospace;
+}
+#score{
+    margin: 10px;
+}
+
+
+
+
+
+/*Animations*/
+
+
+
+
+.ballstump{
+    position: absolute;
+    top: 110px;
+    left: 40px;
+    height: 20px;
+    animation: ballstump 1.5s ease-out  infinite;
+}
+.stump1{
+    background-color: black;
+    position: absolute;
+    top: 100px;
+    left: 1457px;
+    height: 100px;
+    width: 10px;
+    animation: stump1 1.5s ease-in  infinite;
+}
+.stump2{
+    background-color: black;
+    position: absolute;
+    top: 100px;
+    left: 1457px;
+    height: 100px;
+    width: 10px;
+}
+.bail1{
+    background-color: black;
+    position: absolute;
+    top: 100px;
+    left: 1457px;
+    height: 15px;
+    width: 5px;
+    animation: bail1 1.5s ease-in  infinite;
+}
+.bail2{
+    background-color: black;
+    position: absolute;
+    top: 100px;
+    left: 1457px;
+    height: 15px;
+    width: 5px;
+    animation: bail2 1.5s ease-in  infinite;
+}
+@keyframes ballstump{
+    0%  {transform: translateX(0);}
+    70% {transform: translateX(1397px);}
+    100%{transform: translateX(1427px);}
+}
+@keyframes stump1{
+    0%  {transform: rotate(0deg);}
+    70% {transform: rotate(0deg);}
+    100%{transform: rotate(20deg) translateX(20px);}
+}
+@keyframes bail1{
+    0%  {transform: rotate(0deg);}
+    70% {transform: rotate(0deg);}
+    100%{transform: rotate(60deg) translate(40px,-40px);}
+}
+@keyframes bail2{
+    0%  {transform: rotate(0deg);}
+    70% {transform: rotate(0deg);}
+    100%{transform: rotate(30deg) translate(0px,-50px);}
+}
